@@ -1,0 +1,14 @@
+#리라이트 엔진을 활성화 합니다.
+RewriteEngine On
+
+# 상태와 디렉토리 링크
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# 쿼리스트링
+RewriteRule ^ index.php [QSA,L]
+
+
+
+

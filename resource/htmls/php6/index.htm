@@ -1,0 +1,15 @@
+{% if products %}
+	<ul id="products">
+	{% for product in products %}
+	  <li>
+		<h2>{{ product.name }}</h2>
+		Only {{ product.price | price }}
+
+		{{ product.description | prettyprint | paragraph }}
+
+		{{ 'it rocks!' | paragraph }}
+
+	  </li>
+	{% endfor %}
+	</ul>
+{% endif %}
