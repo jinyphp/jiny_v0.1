@@ -8,8 +8,7 @@
         }
     ],
     "require": {
-        "liquid/liquid": "^1.4",
-        "jiny/hello": "^0.0.2"
+        "jiny/core": "^0.0.1"
     },
     "autoload": {
         "psr-4": {
