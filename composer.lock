@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b6ad3b5325cfaf8c3edfd994bcf87c84",
+    "packages": [
+        {
+            "name": "jiny/core",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/core.git",
+                "reference": "919b0ab21b78a612f2c1e2b48b833c0193d96ac0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/core/zipball/919b0ab21b78a612f2c1e2b48b833c0193d96ac0",
+                "reference": "919b0ab21b78a612f2c1e2b48b833c0193d96ac0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com"
+                }
+            ],
+            "description": "jiny framwork core",
+            "time": "2018-05-19T08:08:42+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
