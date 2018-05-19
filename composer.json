@@ -1,0 +1,19 @@
+{
+    "name": "jiny/static",
+    "description": "jiny static website",
+    "authors": [
+        {
+            "name": "hojinlee",
+            "email": "infohojin@gmail.com"
+        }
+    ],
+    "require": {
+        "liquid/liquid": "^1.4",
+        "jiny/hello": "^0.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}
