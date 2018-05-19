@@ -1,0 +1,64 @@
+{
+    "subclass":"",
+    "menu": {
+        "php1":{
+            "ko":"메뉴1",
+            "en":"menu1",
+            "link":"/php1",
+            "menu":{
+                "menu1-1": {
+                    "ko":"메뉴1-1",
+                    "en":"menu1-1",
+                    "link":"/php1/01"
+                },
+                "menu1-2": {
+                    "ko":"메뉴1-2",
+                    "en":"menu1-2",
+                    "link":"/php1/02"
+                },
+                "menu1-3": {
+                    "ko":"메뉴1-3",
+                    "en":"menu1-3",
+                    "link":"/php1/03"
+                }
+            }
+        },
+        "php2":{
+            "ko":"메뉴2",
+            "en":"menu2",
+            "link":"/php2",
+            "menu":{
+                "01": {
+                    "ko":"메뉴2-1",
+                    "en":"menu2-1",
+                    "link":"/php2/01"
+                },
+                "02": {
+                    "ko":"메뉴2-2",
+                    "en":"menu2-2",
+                    "link":"/php2/02"
+                },
+                "03": {
+                    "ko":"메뉴2-3",
+                    "en":"menu2-3",
+                    "link":"/php2/03"
+                }
+            }
+        },
+        "php3":{
+            "ko":"메뉴3",
+            "en":"menu3",
+            "link":"/php3"
+        },
+        "php4":{
+            "ko":"메뉴4",
+            "en":"menu4",
+            "link":"/php4"
+        },
+        "php5":{
+            "ko":"메뉴5",
+            "en":"menu5",
+            "link":"/php5"
+        }
+    }
+}
