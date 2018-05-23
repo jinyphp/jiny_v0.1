@@ -20,12 +20,19 @@
 
     define('HTMLS', ROOT. 'resource'. DS. 'htmls'. DS);
 
-    $modules = [ROOT, APP, CORE, CONTROLLERS, DATA];
+    $modules = [
+        ROOT, 
+        APP, 
+        CORE, 
+        CONTROLLERS, 
+        DATA
+    ];
     set_include_path(get_include_path(). PS. implode(PS, $modules));
    
 
     // 환경설정을 파일을 읽어옵니다.
     $config = include "..".DS."app".DS."conf".DS."config.php";
     
-    // 메인루틴으로 전달합니다.
+    //
+    // 메인루틴 호출.
     require_once "main.php";
