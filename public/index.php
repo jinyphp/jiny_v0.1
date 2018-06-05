@@ -31,7 +31,7 @@
    
 
     // 환경설정을 파일을 읽어옵니다.
-    $config = include "..".DS."app".DS."conf".DS."config.php";
+    // $config = include "..".DS."app".DS."conf".DS."config.php";
     
     //
     // 메인루틴 호출.
