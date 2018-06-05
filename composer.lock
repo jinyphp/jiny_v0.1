@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6ad3b5325cfaf8c3edfd994bcf87c84",
+    "content-hash": "e9a50a0dd190318677f9d9a565afd541",
     "packages": [
         {
             "name": "jiny/core",
