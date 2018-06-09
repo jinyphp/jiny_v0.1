@@ -1,4 +1,10 @@
 <?php
 return [
-    'conf' => "../conf"
+    'path'=> [
+        'app'=>"../app",
+        'conf' => "../conf",
+        'theme' => "../theme"
+    ],
+    'conf' => "../conf",
+    'theme' => "../theme"    
 ];

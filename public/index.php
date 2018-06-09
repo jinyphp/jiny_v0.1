@@ -1,5 +1,13 @@
 <?php
 
+    /**
+    * JINY - A PHP Framework
+    *
+    * @package  Jiny
+    * @author   Hojin Lee <infohojin@gmail.com>
+    */
+    define('JINY_START', microtime(true));
+
     // 캐쉬방지 처리 해더 전송
     header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
     header('Pragma: no-cache'); // HTTP 1.0.

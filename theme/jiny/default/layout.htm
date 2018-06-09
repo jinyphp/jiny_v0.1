@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- 부트스트랩 -->
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-treeview.min.css">
+
+	<!-- 슬라이드 -->
+    <link rel="stylesheet" href="/assets/css/half-slider.css">
+
+
+    <link href="/assets/css/modern-business.css" rel="stylesheet">
+
+	<!-- 반응형 width 패딩 -->
+    <style>
+    	body {
+    		padding-top: 54px;
+    	}
+    	@media (min-width: 992px) {
+    		body {
+        		padding-top: 56px;
+        	}
+    	}
+    </style>
+
+    <title>{%% #page.title %%}</title>
+
+</head>
+
+<body>
+    {%header%}
+    {%content%}
+    {%footer%}
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="/assets/jquery/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-treeview.min.js"></script>
+
+</body>
+</html>
