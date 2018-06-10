@@ -9,11 +9,14 @@
     ],
     "require": {
         "jiny/core": "^0.0.3",
-        "jiny/theme": "^0.0.2",
+        "jiny/theme": "^0.0.1",
         "webuni/front-matter": "^1.1",
         "erusev/parsedown": "^1.7",
         "jiny/config": "^0.0.2",
-        "jiny/frontmatter": "^0.0.2"
+        "jiny/frontmatter": "^0.0.2",
+        "jiny/menu": "^0.0.1",
+        "jiny/pages": "^0.0.1",
+        "liquid/liquid": "^1.4"
     },
     "autoload": {
         "psr-4": {

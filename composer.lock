@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eef2ecaa94a1d5b43547c9a4b2e86483",
+    "content-hash": "ae8ff6b86b211c3afe7c1575e3d71680",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -54,16 +54,16 @@
         },
         {
             "name": "jiny/config",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/config.git",
-                "reference": "421de6bc17877e28c4f151a61b505a46be715e6c"
+                "reference": "56c9848bb19f587b1e80a9e7415749ba4f09e4c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/config/zipball/421de6bc17877e28c4f151a61b505a46be715e6c",
-                "reference": "421de6bc17877e28c4f151a61b505a46be715e6c",
+                "url": "https://api.github.com/repos/jinyphp/config/zipball/56c9848bb19f587b1e80a9e7415749ba4f09e4c8",
+                "reference": "56c9848bb19f587b1e80a9e7415749ba4f09e4c8",
                 "shasum": ""
             },
             "require": {
@@ -93,21 +93,24 @@
                 "framwork",
                 "jiny"
             ],
-            "time": "2018-06-09T09:01:15+00:00"
+            "time": "2018-06-09T11:35:38+00:00"
         },
         {
             "name": "jiny/core",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/core.git",
-                "reference": "919b0ab21b78a612f2c1e2b48b833c0193d96ac0"
+                "reference": "bb2de09afaf5c6f776e41f48023b1da4484b1b08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/core/zipball/919b0ab21b78a612f2c1e2b48b833c0193d96ac0",
-                "reference": "919b0ab21b78a612f2c1e2b48b833c0193d96ac0",
+                "url": "https://api.github.com/repos/jinyphp/core/zipball/bb2de09afaf5c6f776e41f48023b1da4484b1b08",
+                "reference": "bb2de09afaf5c6f776e41f48023b1da4484b1b08",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
             },
             "type": "library",
             "autoload": {
@@ -122,24 +125,30 @@
             "authors": [
                 {
                     "name": "hojinlee",
-                    "email": "infohojin@gmail.com"
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
                 }
             ],
             "description": "jiny framwork core",
-            "time": "2018-05-19T08:08:42+00:00"
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jiny"
+            ],
+            "time": "2018-06-09T18:30:11+00:00"
         },
         {
             "name": "jiny/frontmatter",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/frontmatter.git",
-                "reference": "7d0d0024c2f57edc22f307c889d6013b86515ebb"
+                "reference": "c28560a21112438ac3e5a33e16594619e7a393ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/7d0d0024c2f57edc22f307c889d6013b86515ebb",
-                "reference": "7d0d0024c2f57edc22f307c889d6013b86515ebb",
+                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/c28560a21112438ac3e5a33e16594619e7a393ef",
+                "reference": "c28560a21112438ac3e5a33e16594619e7a393ef",
                 "shasum": ""
             },
             "require": {
@@ -163,14 +172,100 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny frontmatter",
+            "description": "jiny frontMatter",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
                 "frontmatter",
                 "jiny"
             ],
-            "time": "2018-06-09T09:38:54+00:00"
+            "time": "2018-06-09T10:45:49+00:00"
+        },
+        {
+            "name": "jiny/menu",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/menu.git",
+                "reference": "3f388c120cb84756bef34d96bcabcb9e9b8a73e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/menu/zipball/3f388c120cb84756bef34d96bcabcb9e9b8a73e6",
+                "reference": "3f388c120cb84756bef34d96bcabcb9e9b8a73e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Menu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
+                }
+            ],
+            "description": "jiny Framwork Menu",
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jiny",
+                "menu"
+            ],
+            "time": "2018-06-09T19:34:37+00:00"
+        },
+        {
+            "name": "jiny/pages",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/pages.git",
+                "reference": "5a7b13390124d7e841a84d41f79505d3224eed71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/pages/zipball/5a7b13390124d7e841a84d41f79505d3224eed71",
+                "reference": "5a7b13390124d7e841a84d41f79505d3224eed71",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Pages\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
+                }
+            ],
+            "description": "jiny Pages controllers",
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jiny",
+                "pages"
+            ],
+            "time": "2018-06-10T07:36:04+00:00"
         },
         {
             "name": "jiny/theme",
@@ -214,6 +309,64 @@
                 "theme"
             ],
             "time": "2018-06-05T18:11:27+00:00"
+        },
+        {
+            "name": "liquid/liquid",
+            "version": "1.4.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kalimatas/php-liquid.git",
+                "reference": "df8235679d06d57b54d4e1cfd562bbd39f8862a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kalimatas/php-liquid/zipball/df8235679d06d57b54d4e1cfd562bbd39f8862a0",
+                "reference": "df8235679d06d57b54d4e1cfd562bbd39f8862a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.6",
+                "phpunit/phpunit": "<6",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Liquid\\": "src/Liquid"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guz Alexander",
+                    "email": "kalimatas@gmail.com",
+                    "homepage": "http://guzalexander.com"
+                },
+                {
+                    "name": "Harald Hanek"
+                },
+                {
+                    "name": "Mateo Murphy"
+                },
+                {
+                    "name": "Alexey Kopytko",
+                    "email": "alexey@kopytko.com",
+                    "homepage": "https://www.alexeykopytko.com/"
+                }
+            ],
+            "description": "Liquid template engine for PHP",
+            "homepage": "https://github.com/kalimatas/php-liquid",
+            "keywords": [
+                "liquid",
+                "template"
+            ],
+            "time": "2018-03-22T03:13:18+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

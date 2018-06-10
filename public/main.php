@@ -13,9 +13,6 @@ $Registry = \Jiny\Core\Registry\Registry::init([
     "FrontMatter"=>\Jiny\Frontmatter\FrontMatter::class
 ]);
 
-// new \Jiny\Config\Yaml();
-
-
 /**
  * 환경 설정을 읽어옵니다.
  * Registry Config 인스턴스를 이용합니다.
@@ -23,12 +20,6 @@ $Registry = \Jiny\Core\Registry\Registry::init([
 $Registry->get("CONFIG")->autoUpFiles()->parser();
 // \Jiny\Core\Registry::get("CONFIG")->setLoad("site.ini");
 // \Jiny\Core\Registry::get("CONFIG")->setLoad("conf.php");
-
-
-/**
- * 테마 클래스를 Registry pool에 등록합니다
- */
-$Registry->createInstance("\Jiny\Theme\Theme","Theme");
 
 // 클래스 생성
 // Application의 객체를 생성합니다.
