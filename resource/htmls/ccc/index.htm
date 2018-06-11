@@ -1,0 +1,28 @@
+Hello, {{ name }}...
+<br>
+
+{% if menus %}
+    <ul>
+    {% for menu in menus %}
+        <li><a href='{{ menu.href }}'>{{ menu.name }}</a></li>      
+    {% endfor %}
+    </ul>
+{% endif %}
+<hr>
+
+
+{% if products %}
+	<ul id="products">
+	{% for product in products %}
+	  <li>
+		<h2>{{ product.name }}</h2>
+		Only {{ product.price | price }}
+
+		{{ product.description | prettyprint | paragraph }}
+
+		{{ 'it rocks!' | paragraph }}
+
+	  </li>
+	{% endfor %}
+	</ul>
+{% endif %}
