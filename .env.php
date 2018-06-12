@@ -7,5 +7,16 @@ return [
         'view' => "../resource/htmls"
     ],
     'conf' => "../conf",
-    'theme' => "../theme"    
+    'theme' => "../theme",
+    'Resource'=>[
+        'Indexs'=>[
+            "index.htm",
+            "index.md",
+            "index.docx"
+        ]
+    ],
+    'Tamplate'=>[
+        'PreProcess' => true,
+        'Engine' => "Liquid"
+    ]
 ];

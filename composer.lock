@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae8ff6b86b211c3afe7c1575e3d71680",
+    "content-hash": "f1f6a8ad4f98a80f0afc5f43c1dda014",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -182,6 +182,49 @@
             "time": "2018-06-09T10:45:49+00:00"
         },
         {
+            "name": "jiny/locale",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/locale.git",
+                "reference": "1c2a760ed3f0788e58b2088531bc5cfc0f6e8e6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/locale/zipball/1c2a760ed3f0788e58b2088531bc5cfc0f6e8e6f",
+                "reference": "1c2a760ed3f0788e58b2088531bc5cfc0f6e8e6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
+                }
+            ],
+            "description": "JINY Locale",
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jiny",
+                "locale"
+            ],
+            "time": "2018-06-11T09:20:13+00:00"
+        },
+        {
             "name": "jiny/menu",
             "version": "0.0.1",
             "source": {
@@ -266,6 +309,49 @@
                 "pages"
             ],
             "time": "2018-06-10T07:36:04+00:00"
+        },
+        {
+            "name": "jiny/template",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/template.git",
+                "reference": "ac7a905080f6572a883d99ca60e0e1115dce83bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/template/zipball/ac7a905080f6572a883d99ca60e0e1115dce83bf",
+                "reference": "ac7a905080f6572a883d99ca60e0e1115dce83bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
+                }
+            ],
+            "description": "jiny Template",
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jiny",
+                "template"
+            ],
+            "time": "2018-06-12T10:12:53+00:00"
         },
         {
             "name": "jiny/theme",

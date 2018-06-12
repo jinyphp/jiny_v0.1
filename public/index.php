@@ -18,6 +18,7 @@
     const DS = DIRECTORY_SEPARATOR;
     const PS = PATH_SEPARATOR;
 
+    /*
     define('ROOT', dirname(__DIR__). DS);
     define('APP', ROOT. 'app'. DS);
     define('VIEWS', ROOT. 'app'. DS. 'views'. DS);
@@ -36,7 +37,7 @@
         DATA
     ];
     set_include_path(get_include_path(). PS. implode(PS, $modules));
-   
+    */
 
     // 환경설정을 파일을 읽어옵니다.
     // $config = include "..".DS."app".DS."conf".DS."config.php";
