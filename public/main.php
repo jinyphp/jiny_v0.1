@@ -1,9 +1,11 @@
 <?php
 
+define("ROOT", "..");
+define("ROOT_PUBLIC","");
 /**
  * 오토로드 설정
  */
-require_once "../vendor/autoload.php";
+require_once ROOT.DS."vendor".DS."autoload.php";
 
 /**
  * Jiny Framwork Application

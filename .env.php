@@ -1,21 +1,20 @@
 <?php
 return [
+    'base'=>'',
     'path'=> [
         'app'=>"../app",
-        'conf' => "../conf",
-        'theme' => "../theme",
-        'view' => "../resource/htmls"
-    ],
-    'conf' => "../conf",
-    'theme' => "../theme",
-    'Resource'=>[
+        'conf' => "/conf",
+        'theme' => "/theme",
+        'view' => "/resource/htmls"
+    ],    
+    'Resource'=> [
         'Indexs'=>[
             "index.htm",
             "index.md",
             "index.docx"
         ]
     ],
-    'Tamplate'=>[
+    'Tamplate'=> [
         'PreProcess' => true,
         'Engine' => "Liquid"
     ]

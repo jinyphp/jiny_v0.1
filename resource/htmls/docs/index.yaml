@@ -1,4 +1,3 @@
----
 layout: php
 title : jiny 와 함께...
 subtitle : 소개
@@ -10,8 +9,4 @@ seo: aaaa
 # 커스텀 템플릿 설정
 Tamplete:
     preprocess : True
-    Engine: Blade
----
-
-# hhh
-
+    Engine: Liquid

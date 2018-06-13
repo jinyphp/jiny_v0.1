@@ -18,7 +18,8 @@
         "jiny/pages": "^0.0.1",
         "liquid/liquid": "^1.4",
         "jiny/locale": "^0.0.1",
-        "jiny/template": "^0.0.1"
+        "jiny/template": "^0.0.1",
+        "nadirhamid/docx-to-html": "^0.0.1"
     },
     "autoload": {
         "psr-4": {
