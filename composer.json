@@ -1,6 +1,6 @@
 {
     "name": "jiny/jiny",
-    "description": "jiny static website",
+    "description": "jiny Web Freamwork",
     "authors": [
         {
             "name": "hojinlee",
@@ -8,17 +8,17 @@
         }
     ],
     "require": {
-        "jiny/core": "^0.0.3",
+        "jiny/core": "^0.0.4",
         "jiny/theme": "^0.0.1",
         "webuni/front-matter": "^1.1",
         "erusev/parsedown": "^1.7",
-        "jiny/config": "^0.0.2",
-        "jiny/frontmatter": "^0.0.2",
-        "jiny/menu": "^0.0.1",
-        "jiny/pages": "^0.0.1",
+        "jiny/config": "^0.0.3",
+        "jiny/frontmatter": "^0.0.3",
+        "jiny/menu": "^0.0.2",
+        "jiny/pages": "^0.0.2",
         "liquid/liquid": "^1.4",
-        "jiny/locale": "^0.0.1",
-        "jiny/template": "^0.0.1",
+        "jiny/locale": "^0.0.2",
+        "jiny/template": "^0.0.2",
         "nadirhamid/docx-to-html": "^0.0.1"
     },
     "autoload": {

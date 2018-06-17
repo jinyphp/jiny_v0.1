@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-l
 # 쿼리스트링
 RewriteRule ^ index.php [QSA,L]
 
-
+# 이미지 위치변경
+#RewriteRule ^.*/images/(.*)$ http://%{HTTP_HOST}/images/$1 [L,R=301]
 
 

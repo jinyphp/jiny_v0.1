@@ -17,5 +17,8 @@ return [
     'Tamplate'=> [
         'PreProcess' => true,
         'Engine' => "Liquid"
+    ],
+    'theme'=>[
+        'engine'=>'hexo'
     ]
 ];

@@ -7,6 +7,7 @@
 * @author   Hojin Lee <infohojin@gmail.com>
 */
 define('JINY_START', microtime(true));
+require "./public/TimeLog.php";
 
 // 캐쉬방지 처리 해더 전송
 header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.

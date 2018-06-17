@@ -1,5 +1,9 @@
 /vendor/
-/packages/
 
 /theme
+!/theme/jiny/default
+
+/resource
+
+composer.lock
 

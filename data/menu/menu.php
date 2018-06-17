@@ -5,22 +5,21 @@
  */
 return [
     [
-        'name'=>"메뉴1",
-        'href'=>"/php1"
+        'name'=>"Framworks",
+        'href'=>"/jiny"
     ],
     [
-        'name'=>"메뉴2",
-        'href'=>"/php2"
+        'name'=>"PHP",
+        'href'=>"/php"
     ],
     [
-        'name'=>"메뉴3",
-        'href'=>"/php3"
+        'name'=>"GIT",
+        'href'=>"/git"
     ],
     [
-        'name'=>"메뉴4",
-        'href'=>"/php4"
-    ] ,[
-        'name'=>"메뉴5",
-        'href'=>"/php5"
-    ]   
+        'name'=>"GIT2",
+        'ko'=>'',
+        'en'=>"",
+        'href'=>"/git"
+    ] 
 ];
