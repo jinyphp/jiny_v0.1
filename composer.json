@@ -9,6 +9,7 @@
     ],
     "require": {
         "jiny/core": "^0.0.4",
+        "jiny/config": "^0.0.3",
         "jiny/theme": "^0.0.2",
         "webuni/front-matter": "^1.1",
         "erusev/parsedown": "^1.7",
