@@ -14,7 +14,13 @@
                 <ul class="navbar-nav ml-auto">
                 {% for menu in menus %}
                     <li class="nav-item">
-                        <a class="nav-link" href='{{ menu.href }}'>{{ menu.name }}</a>
+                        <a class="nav-link" href='{{ menu.href }}'>
+                        {% if sys.language == "en" %}
+                            {{ menu.en }}
+                        {% else %}
+                            {{ menu.ko }}
+                        {% endif %}
+                        </a>
                     </li>      
                 {% endfor %}
                 </ul>

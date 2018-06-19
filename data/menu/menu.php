@@ -6,15 +6,22 @@
 return [
     [
         'name'=>"Framworks",
-        'href'=>"/jiny"
+        'href'=>"/jiny",
+        'ko'=>'지니',
+        'en'=>"jiny"
     ],
     [
         'name'=>"PHP",
-        'href'=>"/php"
+        'href'=>"/php",
+        'ko'=>"php",
+        'en'=>"PHP"
     ],
     [
         'name'=>"GIT",
-        'href'=>"/git"
+        'href'=>"/git",
+        'ko'=>"깃",
+        'en'=>"Git"
+
     ],
     [
         'name'=>"GIT2",
