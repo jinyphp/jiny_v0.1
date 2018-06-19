@@ -16,6 +16,12 @@
     header('Pragma: no-cache'); // HTTP 1.0.
     header('Expires: 0'); // Proxies.
 
+    // 에러 메세지 출력
+    if (php_sapi_name() == "cli-server") {
+        error_reporting(E_ALL);
+        ini_set("display_errors", 1);
+    }
+    
     // TimeLog::set("Header 전송");
 
     // 상수처리
@@ -23,7 +29,11 @@
     // P
     const DS = DIRECTORY_SEPARATOR;
     const PS = PATH_SEPARATOR;
-    
+
+    // 상대입력값의 절대경로를 저장합니다.
+    // 3권 236페이지 참조
+    define("ROOTPATH", realpath("../"));
+
     define("ROOT", "..");
     define("ROOT_PUBLIC","");
     

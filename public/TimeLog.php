@@ -50,4 +50,9 @@ class TimeLog
         echo "</script>";
     }
 
+    public static function concole($msg)
+    {
+        echo "<script>console.log(\"$msg\");</script>";
+    }
+
 }
