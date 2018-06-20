@@ -8,13 +8,47 @@ return [
         'name'=>"Framworks",
         'href'=>"/jiny",
         'ko'=>'지니',
-        'en'=>"jiny"
+        'en'=>"jiny",
+        'menu1'=>[
+            [
+                'name'=>"core",
+                'href'=>"/jiny/core",
+                'ko'=>'코어',
+                'en'=>"core"
+            ],
+            [
+                'name'=>"template",
+                'href'=>"/jiny/template",
+                'ko'=>"템플릿",
+                'en'=>"template"
+            ]
+        ]
     ],
     [
         'name'=>"PHP",
         'href'=>"/php",
         'ko'=>"php",
-        'en'=>"PHP"
+        'en'=>"PHP",
+        'menu1'=>[
+            [
+                'name'=>"php1",
+                'href'=>"/php/php1",
+                'ko'=>'넘버원',
+                'en'=>"PHP1"
+            ],
+            [
+                'name'=>"php2",
+                'href'=>"/php/php2",
+                'ko'=>'넘버투',
+                'en'=>"PHP2"
+            ],
+            [
+                'name'=>"php3",
+                'href'=>"/php/php3",
+                'ko'=>'넘버쓰리',
+                'en'=>"PHP3"
+            ]
+        ]
     ],
     [
         'name'=>"GIT",
