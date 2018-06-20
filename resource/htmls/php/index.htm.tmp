@@ -1,0 +1,44 @@
+<br>
+<div class="container">
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- 좌측메뉴 -->
+        <div class="col-lg-3 mb-4">        
+            <div class="list-group">
+                
+                <a href="/php/php1" class="list-group-item active">넘버원 PHP</a>
+                <a href="/php/php2" class="list-group-item">넘버투 PHP</a>
+                <a href="/php/php3" class="list-group-item">넘버쓰리 PHP</a>
+            </div>
+
+            <br>
+            <div>
+                <p>프로그램 언어학습 및 정보를 제공합니다.</p>
+                <p>제공정보:</p>
+                <ul>
+                <li>
+                    <strong>PHP</strong>
+                </li>
+                <li>Python</li>
+                <li>HTML&CSS</li>
+                <li>C, C++, C#, Go</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- 본문내용 -->
+        <div class="col-lg-9 mb-4">
+            <h2>넘버 PHP 시리즈 출간</h2>
+            <hr>
+            <article>
+                넘버 PHP 시리즈는 초급부터 하나씩 탄단하게 프로그래밍 언어를 학습할 수 있는 기초서적 시리즈 입니다. PHP의 체계적인 문법 구조, 데이터베이스의 개념과 SQL 학습, 응용을 위한 다양한 PHP 내장함수들을 학습합니다.
+            </article>
+          
+
+        </div>
+    </div>
+    
+</div> <!-- container -->
+

@@ -1,8 +1,4 @@
-/vendor/
-
 /theme
 !/theme/jiny/default
 
-/resource
-
-
+/vendor
