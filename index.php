@@ -26,7 +26,11 @@ if (php_sapi_name() == "cli-server") {
 const DS = DIRECTORY_SEPARATOR;
 const PS = PATH_SEPARATOR;
 
-
+if (DS == "/") {
+    define("SYSTEM", "Linux");
+} else {
+    define("SYSTEM", "Window");
+}
 
 // 상대입력값의 절대경로를 저장합니다.
 // 3권 236페이지 참조
