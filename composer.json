@@ -7,6 +7,7 @@
             "email": "infohojin@gmail.com"
         }
     ],
+    "type": "project",
     "require": {
         "jiny/core": "^0.0.5",
         "jiny/config": "^0.0.4",
