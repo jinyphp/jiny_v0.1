@@ -1,15 +1,33 @@
 <div class="container">
-    <h1 class="mt-4 mb-3">{( #Page.title )}
-            <small>{( #Page.subtitle )}</small>
-    </h1>
+	{% if Page.title %}
+    <h1 class="mt-4 mb-3">{{ Page.title }}
+        <small>{{ Page.subtitle }}</small>
+	</h1>
+	{% endif %}
         
     <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="/">Home</a>
-            <a class="breadcrumb-item" href="/php1/">PHP1</a>
-            <span class="breadcrumb-item active">intro</span>
+        <a class="breadcrumb-item" href="/">Home</a>
+        <a class="breadcrumb-item" href="/php1/">PHP1</a>
+        <span class="breadcrumb-item active">intro</span>
     </nav>
-
+        
     <!-- Content Row -->
-    {{ content }}
+    <div class="row">      
+        
+        <!-- 본문내용 -->
+        <div class="col-lg-9 mb-4">
+			{{ content }}
+        </div>
+
+        <!-- 좌측메뉴 -->
+        <div class="col-lg-3 mb-4">
+			<div class="list-group">
+                <a href="/php/php1/" class="list-group-item active">넘버원 PHP</a>
+                <a href="/php/php2/" class="list-group-item">넘버투 PHP</a>
+                <a href="/php/php3/" class="list-group-item">넘버쓰리 PHP</a>
+            </div>                
+        </div>
+
+    </div>
     <!-- /.row -->
 </div>

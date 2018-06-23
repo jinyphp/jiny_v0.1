@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+define('START', microtime(true));
+const DS = DIRECTORY_SEPARATOR;
+
+require_once "./vendor/autoload.php";
+
+new \Jiny\Lamp\CLI($argv);

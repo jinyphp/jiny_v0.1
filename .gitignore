@@ -1,1 +1,7 @@
+.ftpignore
+.ftpconfig.php
+
 /vendor
+
+/theme
+!/theme/jiny

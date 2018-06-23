@@ -1,5 +1,6 @@
 {
     "jiny/default": {
-        "src": ""
+        "active": "*",
+        "description":"기본 테마 입니다."
     }
 }
