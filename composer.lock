@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d485471e32e25619f2a7b48550a2074d",
+    "content-hash": "f5e446e68ce19f06f70b3b180aea8816",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -97,16 +97,16 @@
         },
         {
             "name": "jiny/core",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/core.git",
-                "reference": "7ee8465e56102a725109fffabde0c88c88610fa8"
+                "reference": "6926803b5d20bc112de71e60a27f7764693d4ba8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/core/zipball/7ee8465e56102a725109fffabde0c88c88610fa8",
-                "reference": "7ee8465e56102a725109fffabde0c88c88610fa8",
+                "url": "https://api.github.com/repos/jinyphp/core/zipball/6926803b5d20bc112de71e60a27f7764693d4ba8",
+                "reference": "6926803b5d20bc112de71e60a27f7764693d4ba8",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +135,7 @@
                 "framwork",
                 "jiny"
             ],
-            "time": "2018-06-19T18:51:20+00:00"
+            "time": "2018-06-23T19:20:26+00:00"
         },
         {
             "name": "jiny/frontmatter",

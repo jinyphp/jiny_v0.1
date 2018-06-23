@@ -9,7 +9,6 @@
     ],
     "type": "project",
     "require": {
-        "jiny/core": "^0.0.5",
         "jiny/config": "^0.0.4",
         "jiny/theme": "^0.0.3",
         "erusev/parsedown": "^1.7",
@@ -22,7 +21,8 @@
         "nadirhamid/docx-to-html": "^0.0.1",
         "sunra/php-simple-html-dom-parser": "^1.5",
         "symfony/filesystem": "^4.1",
-        "jiny/lamp": "^0.0.2"
+        "jiny/lamp": "^0.0.2",
+        "jiny/core": "^0.0.6"
     },
     "autoload": {
         "psr-4": {
