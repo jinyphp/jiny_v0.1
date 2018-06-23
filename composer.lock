@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75c014693c83e3cd4d47a51d1b59a3e9",
+    "content-hash": "d485471e32e25619f2a7b48550a2074d",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -183,16 +183,16 @@
         },
         {
             "name": "jiny/lamp",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/lamp.git",
-                "reference": "aa4a921d23b76683e05d04324b2952bca92a2e60"
+                "reference": "f1cfacac9d59cdd01703b2ef9a006ae1bdb53909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/lamp/zipball/aa4a921d23b76683e05d04324b2952bca92a2e60",
-                "reference": "aa4a921d23b76683e05d04324b2952bca92a2e60",
+                "url": "https://api.github.com/repos/jinyphp/lamp/zipball/f1cfacac9d59cdd01703b2ef9a006ae1bdb53909",
+                "reference": "f1cfacac9d59cdd01703b2ef9a006ae1bdb53909",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +223,7 @@
                 "jiny",
                 "lamp"
             ],
-            "time": "2018-06-20T06:49:27+00:00"
+            "time": "2018-06-23T18:52:56+00:00"
         },
         {
             "name": "jiny/locale",

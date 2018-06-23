@@ -22,7 +22,7 @@
         "nadirhamid/docx-to-html": "^0.0.1",
         "sunra/php-simple-html-dom-parser": "^1.5",
         "symfony/filesystem": "^4.1",
-        "jiny/lamp": "^0.0.1"
+        "jiny/lamp": "^0.0.2"
     },
     "autoload": {
         "psr-4": {
