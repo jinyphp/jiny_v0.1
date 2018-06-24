@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5e446e68ce19f06f70b3b180aea8816",
+    "content-hash": "e2c7f1d607bcfb01d83418a208f6f727",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -54,16 +54,16 @@
         },
         {
             "name": "jiny/config",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/config.git",
-                "reference": "600b58d01f9dd951bcc2d5fc0924fe7176c96fc3"
+                "reference": "1d36c7664c85490a8066577aa0066dbb0ea034e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/config/zipball/600b58d01f9dd951bcc2d5fc0924fe7176c96fc3",
-                "reference": "600b58d01f9dd951bcc2d5fc0924fe7176c96fc3",
+                "url": "https://api.github.com/repos/jinyphp/config/zipball/1d36c7664c85490a8066577aa0066dbb0ea034e9",
+                "reference": "1d36c7664c85490a8066577aa0066dbb0ea034e9",
                 "shasum": ""
             },
             "require": {
@@ -93,7 +93,7 @@
                 "framwork",
                 "jiny"
             ],
-            "time": "2018-06-19T18:50:42+00:00"
+            "time": "2018-06-24T10:00:33+00:00"
         },
         {
             "name": "jiny/core",
@@ -139,16 +139,16 @@
         },
         {
             "name": "jiny/frontmatter",
-            "version": "0.0.3",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/frontmatter.git",
-                "reference": "ec47d9be0b832e97a8896059a913f890f348dce3"
+                "reference": "40e5d335d595da8767546a7113e93c69f05f80a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/ec47d9be0b832e97a8896059a913f890f348dce3",
-                "reference": "ec47d9be0b832e97a8896059a913f890f348dce3",
+                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/40e5d335d595da8767546a7113e93c69f05f80a3",
+                "reference": "40e5d335d595da8767546a7113e93c69f05f80a3",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                 "frontmatter",
                 "jiny"
             ],
-            "time": "2018-06-17T18:56:44+00:00"
+            "time": "2018-06-24T10:02:05+00:00"
         },
         {
             "name": "jiny/lamp",
