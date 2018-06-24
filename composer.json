@@ -9,10 +9,10 @@
     ],
     "type": "project",
     "require": {
-        "jiny/config": "^0.0.4",
+        "jiny/config": "^0.0.5",
         "jiny/theme": "^0.0.3",
         "erusev/parsedown": "^1.7",
-        "jiny/frontmatter": "^0.0.3",
+        "jiny/frontmatter": "^0.0.5",
         "jiny/menu": "^0.0.2",
         "jiny/pages": "^0.0.3",
         "liquid/liquid": "^1.4",
