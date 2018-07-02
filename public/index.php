@@ -6,7 +6,7 @@
     * @package  Jiny
     * @author   Hojin Lee <infohojin@gmail.com>
     */
-    
+    define('JINY_START', microtime(true));
     require "TimeLog.php";
 
     TimeLog::init();    
@@ -30,6 +30,12 @@
     const DS = DIRECTORY_SEPARATOR;
     const PS = PATH_SEPARATOR;
 
+    if (DS == "/") {
+        define("SYSTEM", "Linux");
+    } else {
+        define("SYSTEM", "Window");
+    }
+
     // 상대입력값의 절대경로를 저장합니다.
     // 3권 236페이지 참조
     define("ROOTPATH", realpath("../"));
@@ -48,7 +54,9 @@ if(file_exists($autoload)){
 
     // Jiny Framwork Application
     // __construction()이 실행이 됩니다.
-    new \Jiny\Core\Application();
+    $app = new \Jiny\Core\Application();
+    $app->run();
+    
 } else {
     echo "composer autoload가 설정되어 있지 않습니다.<br>";
 }

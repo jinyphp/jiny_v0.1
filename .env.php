@@ -5,7 +5,10 @@ return [
         'app'=>"../app",
         'conf' => "/conf",
         'theme' => "/theme",
-        'view' => "/resource/htmls"
+        'view' => "/resource/views",
+        'pages' => "/resource/pages",
+        'layout' => "/resource/layout",
+        'route' => "/app/route"
     ],    
     'Resource'=> [
         'Indexs'=>[

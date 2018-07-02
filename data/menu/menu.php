@@ -25,9 +25,15 @@ return [
         ]
     ],
     [
+        'name'=>"SRC",
+        'ko'=>'소스코드',
+        'en'=>"Source",
+        'href'=>"/source"
+    ],
+    [
         'name'=>"PHP",
         'href'=>"/php",
-        'ko'=>"php",
+        'ko'=>"PHP",
         'en'=>"PHP",
         'menu1'=>[
             [
@@ -51,16 +57,27 @@ return [
         ]
     ],
     [
-        'name'=>"GIT",
-        'href'=>"/git",
-        'ko'=>"깃",
-        'en'=>"Git"
-
+        'name'=>"HTML",
+        'href'=>"/html",
+        'ko'=>"HTML",
+        'en'=>"HTML"
     ],
     [
-        'name'=>"GIT2",
-        'ko'=>'',
-        'en'=>"",
-        'href'=>"/git"
-    ] 
+        'name'=>"Javascript",
+        'href'=>"/javascript",
+        'ko'=>"Javascript",
+        'en'=>"Javascript"
+    ],
+    [
+        'name'=>"GIT",
+        'href'=>"/git",
+        'ko'=>"Git",
+        'en'=>"Git"
+    ],
+    [
+        'name'=>"Server",
+        'href'=>"/server",
+        'ko'=>"Server",
+        'en'=>"Server"
+    ]
 ];

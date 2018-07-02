@@ -1,33 +1,30 @@
 <?php
 namespace App\Controllers;
 
-class HomeController
-{
-    public $_app;
+use \Jiny\Core\Controllers\Controller;
+use \Jiny\Core\Registry\Registry;
 
-    public function __construct($app)
+class HomeController extends Controller
+{
+
+    public function __construct($app=Null)
     {
-        echo __CLASS__." 객체가 생성이 되었습니다.<br>";
-        $this->_app = $app;
+        \TimeLog::set(__CLASS__);
+        //controller
+        $this->setApp($app);
     }
 
     // 기본실행 메서드
     public function index()
     {
-        echo __METHOD__."를 호출합니다.<br>";
-        
+        \TimeLog::set(__METHOD__);
+        return "Hi, Jiny!";
     }
 
-    // 기본실행 메서드
-    public function boot()
+    public function hello()
     {
-        echo __METHOD__."를 호출합니다.<br>";
-
-        echo "<pre>";
-        print_r($this->_app->_prams);
-        echo "</pre>";
-        echo "<hr>";
-        
+        \TimeLog::set(__METHOD__);  
+        return $this->view();      
     }
 
 }

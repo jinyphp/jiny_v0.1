@@ -1,7 +1,10 @@
 .ftpignore
 .ftpconfig.php
-
 /vendor
 
-/theme
-!/theme/jiny
+/public/_
+
+/resource
+/resource/goods
+/resource/pages/Laravel
+/resource/pages/Azure
