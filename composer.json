@@ -22,14 +22,15 @@
         "sunra/php-simple-html-dom-parser": "^1.5",
         "symfony/filesystem": "^4.1",
         "jiny/lamp": "^0.0.2",
-        "jiny/core": "^0.0.6"
+        "jiny/core": "^0.0.6",
+        "nikic/fast-route": "^1.3"
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/"
         },
         "files": [
-			"app/helpers.php"
+			"app/lib/helpers.php"
 		]
     }
 }

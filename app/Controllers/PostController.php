@@ -23,7 +23,7 @@ class PostController extends Controller
         // 포스트의 데이터를 읽어옵니다.
         $post = $this->postMatter("/resource/post");
 
-        return $this->view($this->App->Route->_viewFile, $post);     
+        return $this->view($this->App->_viewFile, $post);     
 
     }
 
