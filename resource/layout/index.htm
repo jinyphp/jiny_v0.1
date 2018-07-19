@@ -1,0 +1,51 @@
+---
+category: php
+submenus:
+    -
+        name: BOOK
+        link: /
+    -
+        name: 지니프레임웍
+        link: /jiny      
+    - 
+        name: PHP
+        link: /php
+---
+<div class="container">
+	{% if Page.title %}
+    <h1 class="mt-4 mb-3">{{ Page.title }}
+        <small>{{ Page.subtitle }}</small>
+	</h1>
+	{% endif %}
+    
+   
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/">Home</a>
+    </nav>
+        
+    <!-- Content Row -->
+    <div class="row">      
+        
+        <!-- 본문내용 -->
+        <div class="col-lg-9 mb-4">
+			{{ content }}
+        </div>
+
+        <!-- 좌측메뉴 -->
+        <div class="col-lg-3 mb-4">
+			<div class="list-group">
+                {% if page.submenus %}                    
+                    {% for submenu in page.submenus %}
+                        {% if url == submenu.link %}
+                            <a href="{{submenu.link}}" class="list-group-item active">{{ submenu.name }}</a>
+                        {% else %}
+                            <a href="{{submenu.link}}" class="list-group-item">{{ submenu.name }}</a>   
+                        {% endif %}                      
+                    {% endfor %}                  
+                {% endif %}
+            </div>                
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>

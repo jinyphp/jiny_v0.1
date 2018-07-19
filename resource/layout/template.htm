@@ -1,0 +1,59 @@
+---
+category: template
+submenus:
+    -
+        name: 템플릿 소개
+        link: /jiny/template       
+    - 
+        name: 엔진
+        link: /jiny/template/engine
+    - 
+        name: 카페트(Carpet)
+        link: /jiny/template/carpet
+    -
+        name: 리퀴드(Liquid)
+        link: /jiny/template/liquid
+    -
+        name: 블레이드(Blade)
+        link: /jiny/template/blade
+---
+<div class="container">
+	{% if Page.title %}
+    <h1 class="mt-4 mb-3">{{ Page.title }}
+        <small>{{ Page.subtitle }}</small>
+	</h1>
+	{% endif %}
+    
+   
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/">Home</a>
+        <a class="breadcrumb-item" href="/jiny/">Jiny</a>
+        <span class="breadcrumb-item active">{{page.category}}</span>
+    </nav>
+        
+    <!-- Content Row -->
+    <div class="row">      
+        
+        <!-- 본문내용 -->
+        <div class="col-lg-9 mb-4">
+			{{ content }}
+        </div>
+
+        <!-- 좌측메뉴 -->
+        <div class="col-lg-3 mb-4">
+			<div class="list-group">
+                {% if page.submenus %}                    
+                    {% for submenu in page.submenus %}
+                        {% if url == submenu.link %}
+                            <a href="{{submenu.link}}" class="list-group-item active">{{ submenu.name }}</a>
+                        {% else %}
+                            <a href="{{submenu.link}}" class="list-group-item">{{ submenu.name }}</a>   
+                        {% endif %}                      
+                    {% endfor %}                  
+                {% endif %}
+            </div>                
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>

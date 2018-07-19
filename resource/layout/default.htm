@@ -1,0 +1,29 @@
+<div class="container">
+    {% if page.title %}
+    <h1 class="mt-4 mb-3">{{ page.title }}
+        <small>{{ page.subtitle }}</small>
+    </h1>
+    {% endif %}
+
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/">Home</a>
+        <a class="breadcrumb-item" href="/jiny/">Jiny</a>
+        <span class="breadcrumb-item active">intro</span>
+    </nav>
+
+    <!-- Content Row -->
+    <div class="row">
+
+        <!-- 본문내용 -->
+        <div class="col-lg-9 mb-4">
+            {{ content }}
+        </div>
+
+        <!-- 좌측메뉴 -->
+        <div class="col-lg-3 mb-4">
+                {% include submenu.htm %} 
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>

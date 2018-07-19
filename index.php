@@ -11,10 +11,12 @@ require "./public/TimeLog.php";
 
 TimeLog::init(); 
 
+/*
 // 캐쉬방지 처리 해더 전송
 header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
 header('Pragma: no-cache'); // HTTP 1.0.
 header('Expires: 0'); // Proxies.
+*/
 
 
 // 에러 메세지 출력
@@ -55,12 +57,11 @@ if(file_exists($autoload)){
     // Jiny Framwork Application
     // __construction()이 실행이 됩니다.
     $app = new \Jiny\Core\Application();
-    $app->run();
     
 } else {
     echo "composer autoload가 설정되어 있지 않습니다.<br>";
     exit;
 }
 
-TimeLog::set("END");
-TimeLog::monitor();
+// TimeLog::set("END");
+// TimeLog::monitor();

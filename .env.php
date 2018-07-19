@@ -15,13 +15,16 @@ return [
             "index.htm",
             "index.md",
             "index.docx"
+        ],
+        'menu'=>[
+            'type' => "json",
+            'path' => "/resource/menu",
+            'file' => "menu.json"
         ]
     ],
     'Tamplate'=> [
         'PreProcess' => true,
-        'Engine' => "Liquid"
-    ],
-    'theme'=>[
-        'engine'=>'hexo'
+        'Engine' => "Liquid",
+        'Cache' => false
     ]
 ];

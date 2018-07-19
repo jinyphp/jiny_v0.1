@@ -1,0 +1,82 @@
+---
+submenus:
+    -
+        name: 프레임웍
+        link: /jiny
+        id: 01 
+    -
+        name: 설치
+        link: /jiny/setup
+        id: 02    
+    - 
+        name: 버젼
+        link: /jiny/version
+        id: 03
+    - 
+        name: 빠른시작
+        link: /jiny/quick
+        id: 04
+    - 
+        name: 구조
+        link: /jiny/structure
+        id: 05
+    - 
+        name: 템플릿
+        link: /jiny/template
+        id: 06
+        menu:
+            - 
+                name: 엔진
+                link: /jiny/template/engine
+                id: 06-01
+            - 
+                name: 카페트(Carpet)
+                link: /jiny/template/carpet
+                id: 06-02
+            -
+                name: 리퀴드(Liquid)
+                link: /jiny/template/liquid
+                id: 06-03
+            -
+                name: 블레이드(Blade)
+                link: /jiny/template/blade
+                id: 06-04
+    - 
+        name: CLI
+        link: /jiny/lamp
+        id: 07
+---
+<div class="container">
+	{% if Page.title %}
+    <h1 class="mt-4 mb-3">{{ Page.title }}
+        <small>{{ Page.subtitle }}</small>
+	</h1>
+	{% endif %}
+        
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/">Home</a>
+        <a class="breadcrumb-item" href="/jiny/">Jiny</a>
+        <span class="breadcrumb-item active">intro</span>
+    </nav>
+        
+    <!-- Content Row -->
+    <div class="row">      
+        
+        <!-- 본문내용 -->
+        <div class="col-lg-9 mb-4">
+            <div id="mainbody">
+               {{ content }} 
+            </div>			
+        </div>
+
+        <!-- 좌측메뉴 -->
+        <div class="col-lg-3 mb-4">            
+
+            
+            {% include submenu.htm %}     
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>

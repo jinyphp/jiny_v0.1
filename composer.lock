@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1c6b45e32c1ed40f1fed2a38caaf813",
+    "content-hash": "31b343065a895f71a49bd0c4fa60a5b1",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -54,16 +54,16 @@
         },
         {
             "name": "jiny/config",
-            "version": "0.0.5",
+            "version": "0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/config.git",
-                "reference": "1d36c7664c85490a8066577aa0066dbb0ea034e9"
+                "reference": "eab589e51bbc050a3e3a016e10b6cdd7f1508498"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/config/zipball/1d36c7664c85490a8066577aa0066dbb0ea034e9",
-                "reference": "1d36c7664c85490a8066577aa0066dbb0ea034e9",
+                "url": "https://api.github.com/repos/jinyphp/config/zipball/eab589e51bbc050a3e3a016e10b6cdd7f1508498",
+                "reference": "eab589e51bbc050a3e3a016e10b6cdd7f1508498",
                 "shasum": ""
             },
             "require": {
@@ -73,7 +73,10 @@
             "autoload": {
                 "psr-4": {
                     "Jiny\\Config\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Helper/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -93,7 +96,7 @@
                 "framwork",
                 "jiny"
             ],
-            "time": "2018-06-24T10:00:33+00:00"
+            "time": "2018-07-19T08:03:13+00:00"
         },
         {
             "name": "jiny/core",
@@ -270,16 +273,16 @@
         },
         {
             "name": "jiny/menu",
-            "version": "0.0.2",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/menu.git",
-                "reference": "a04eda6e26b28a0b1f1ceec9b4cc8af677f95407"
+                "reference": "63b89905076fc109d95faeabdae79be306ce8b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/menu/zipball/a04eda6e26b28a0b1f1ceec9b4cc8af677f95407",
-                "reference": "a04eda6e26b28a0b1f1ceec9b4cc8af677f95407",
+                "url": "https://api.github.com/repos/jinyphp/menu/zipball/63b89905076fc109d95faeabdae79be306ce8b57",
+                "reference": "63b89905076fc109d95faeabdae79be306ce8b57",
                 "shasum": ""
             },
             "require": {
@@ -289,7 +292,10 @@
             "autoload": {
                 "psr-4": {
                     "Jiny\\Menu\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Helper/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -309,7 +315,7 @@
                 "jiny",
                 "menu"
             ],
-            "time": "2018-06-13T12:26:16+00:00"
+            "time": "2018-07-19T07:45:00+00:00"
         },
         {
             "name": "jiny/pages",
@@ -353,6 +359,52 @@
                 "pages"
             ],
             "time": "2018-06-19T08:06:10+00:00"
+        },
+        {
+            "name": "jiny/router",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/router.git",
+                "reference": "7c8449e29a1b7115be4d854e8b41bb7f53588c28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/router/zipball/7c8449e29a1b7115be4d854e8b41bb7f53588c28",
+                "reference": "7c8449e29a1b7115be4d854e8b41bb7f53588c28",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Router\\": "src/"
+                },
+                "files": [
+                    "src/Helper/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
+                }
+            ],
+            "description": "jiny router",
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jiny",
+                "router"
+            ],
+            "time": "2018-07-15T17:16:12+00:00"
         },
         {
             "name": "jiny/template",
@@ -439,6 +491,51 @@
                 "theme"
             ],
             "time": "2018-06-17T19:16:36+00:00"
+        },
+        {
+            "name": "jiny/view",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/view.git",
+                "reference": "252a5c00351d071b4c9109deaff7bd0644eacc31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/view/zipball/252a5c00351d071b4c9109deaff7bd0644eacc31",
+                "reference": "252a5c00351d071b4c9109deaff7bd0644eacc31",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\View\\": "src/"
+                },
+                "files": [
+                    "src/Helper/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
+                }
+            ],
+            "description": "jiny framwork core",
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jiny"
+            ],
+            "time": "2018-07-10T02:36:10+00:00"
         },
         {
             "name": "liquid/liquid",
@@ -629,7 +726,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -734,7 +831,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
