@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31b343065a895f71a49bd0c4fa60a5b1",
+    "content-hash": "66f6c0c3d0b83c4c79d0b38d2668240f",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -100,16 +100,16 @@
         },
         {
             "name": "jiny/core",
-            "version": "0.0.6",
+            "version": "0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/core.git",
-                "reference": "6926803b5d20bc112de71e60a27f7764693d4ba8"
+                "reference": "ef3067db19485717917676f0f009a76a2451593f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/core/zipball/6926803b5d20bc112de71e60a27f7764693d4ba8",
-                "reference": "6926803b5d20bc112de71e60a27f7764693d4ba8",
+                "url": "https://api.github.com/repos/jinyphp/core/zipball/ef3067db19485717917676f0f009a76a2451593f",
+                "reference": "ef3067db19485717917676f0f009a76a2451593f",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +119,10 @@
             "autoload": {
                 "psr-4": {
                     "Jiny\\Core\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Helper/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -138,20 +141,20 @@
                 "framwork",
                 "jiny"
             ],
-            "time": "2018-06-23T19:20:26+00:00"
+            "time": "2018-07-19T08:26:10+00:00"
         },
         {
             "name": "jiny/frontmatter",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/frontmatter.git",
-                "reference": "40e5d335d595da8767546a7113e93c69f05f80a3"
+                "reference": "2c4bc4d9af6919d0cbed114496e8f628e4b8c401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/40e5d335d595da8767546a7113e93c69f05f80a3",
-                "reference": "40e5d335d595da8767546a7113e93c69f05f80a3",
+                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/2c4bc4d9af6919d0cbed114496e8f628e4b8c401",
+                "reference": "2c4bc4d9af6919d0cbed114496e8f628e4b8c401",
                 "shasum": ""
             },
             "require": {
@@ -162,7 +165,10 @@
             "autoload": {
                 "psr-4": {
                     "Jiny\\Frontmatter\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Helpers/helper.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -182,25 +188,28 @@
                 "frontmatter",
                 "jiny"
             ],
-            "time": "2018-06-24T10:02:05+00:00"
+            "time": "2018-07-19T08:29:47+00:00"
         },
         {
             "name": "jiny/lamp",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/lamp.git",
-                "reference": "f1cfacac9d59cdd01703b2ef9a006ae1bdb53909"
+                "reference": "5eaedbd5ee8dc5768ebe3caa304250297ca8f1d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/lamp/zipball/f1cfacac9d59cdd01703b2ef9a006ae1bdb53909",
-                "reference": "f1cfacac9d59cdd01703b2ef9a006ae1bdb53909",
+                "url": "https://api.github.com/repos/jinyphp/lamp/zipball/5eaedbd5ee8dc5768ebe3caa304250297ca8f1d7",
+                "reference": "5eaedbd5ee8dc5768ebe3caa304250297ca8f1d7",
                 "shasum": ""
             },
             "require": {
                 "php": ">= 7.0"
             },
+            "bin": [
+                "lamp"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -226,20 +235,20 @@
                 "jiny",
                 "lamp"
             ],
-            "time": "2018-06-23T18:52:56+00:00"
+            "time": "2018-07-19T08:35:32+00:00"
         },
         {
             "name": "jiny/locale",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/locale.git",
-                "reference": "5e0ea8766a22bc8e269bd33e768f061c3f39b9e3"
+                "reference": "ecb2cf2950a8216c09ce572de53ab03f39fca9af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/locale/zipball/5e0ea8766a22bc8e269bd33e768f061c3f39b9e3",
-                "reference": "5e0ea8766a22bc8e269bd33e768f061c3f39b9e3",
+                "url": "https://api.github.com/repos/jinyphp/locale/zipball/ecb2cf2950a8216c09ce572de53ab03f39fca9af",
+                "reference": "ecb2cf2950a8216c09ce572de53ab03f39fca9af",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +278,7 @@
                 "jiny",
                 "locale"
             ],
-            "time": "2018-06-17T19:10:22+00:00"
+            "time": "2018-07-19T08:37:20+00:00"
         },
         {
             "name": "jiny/menu",
@@ -319,16 +328,16 @@
         },
         {
             "name": "jiny/pages",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/pages.git",
-                "reference": "2663f68221fdbc06bb0434be92e0bfcfa0148460"
+                "reference": "8b829b0661a732038eac64d7654054b4d453a9e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/pages/zipball/2663f68221fdbc06bb0434be92e0bfcfa0148460",
-                "reference": "2663f68221fdbc06bb0434be92e0bfcfa0148460",
+                "url": "https://api.github.com/repos/jinyphp/pages/zipball/8b829b0661a732038eac64d7654054b4d453a9e4",
+                "reference": "8b829b0661a732038eac64d7654054b4d453a9e4",
                 "shasum": ""
             },
             "require": {
@@ -338,7 +347,10 @@
             "autoload": {
                 "psr-4": {
                     "Jiny\\Pages\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Helpers/helper.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -358,20 +370,20 @@
                 "jiny",
                 "pages"
             ],
-            "time": "2018-06-19T08:06:10+00:00"
+            "time": "2018-07-19T08:53:55+00:00"
         },
         {
             "name": "jiny/router",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/router.git",
-                "reference": "7c8449e29a1b7115be4d854e8b41bb7f53588c28"
+                "reference": "f7392b5e549acbf302afcfa8853153fb7f97b1d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/router/zipball/7c8449e29a1b7115be4d854e8b41bb7f53588c28",
-                "reference": "7c8449e29a1b7115be4d854e8b41bb7f53588c28",
+                "url": "https://api.github.com/repos/jinyphp/router/zipball/f7392b5e549acbf302afcfa8853153fb7f97b1d8",
+                "reference": "f7392b5e549acbf302afcfa8853153fb7f97b1d8",
                 "shasum": ""
             },
             "require": {
@@ -404,20 +416,20 @@
                 "jiny",
                 "router"
             ],
-            "time": "2018-07-15T17:16:12+00:00"
+            "time": "2018-07-19T08:55:26+00:00"
         },
         {
             "name": "jiny/template",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/template.git",
-                "reference": "d936d3de887365015ff753130314e7c02cd14bff"
+                "reference": "c5cb927ec7a7ecc76a7d19bb802849f66f8d1f68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/template/zipball/d936d3de887365015ff753130314e7c02cd14bff",
-                "reference": "d936d3de887365015ff753130314e7c02cd14bff",
+                "url": "https://api.github.com/repos/jinyphp/template/zipball/c5cb927ec7a7ecc76a7d19bb802849f66f8d1f68",
+                "reference": "c5cb927ec7a7ecc76a7d19bb802849f66f8d1f68",
                 "shasum": ""
             },
             "require": {
@@ -447,63 +459,20 @@
                 "jiny",
                 "template"
             ],
-            "time": "2018-06-19T18:51:55+00:00"
-        },
-        {
-            "name": "jiny/theme",
-            "version": "0.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jinyphp/theme.git",
-                "reference": "e6368691cc28a93098db111de06d595fc793460c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/theme/zipball/e6368691cc28a93098db111de06d595fc793460c",
-                "reference": "e6368691cc28a93098db111de06d595fc793460c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">= 7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jiny\\Theme\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "hojinlee",
-                    "email": "infohojin@gmail.com",
-                    "homepage": "http://hojin.io"
-                }
-            ],
-            "description": "jiny Framwork Theme",
-            "homepage": "http://jiny.hojin.io",
-            "keywords": [
-                "framwork",
-                "jiny",
-                "theme"
-            ],
-            "time": "2018-06-17T19:16:36+00:00"
+            "time": "2018-07-19T08:56:20+00:00"
         },
         {
             "name": "jiny/view",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/view.git",
-                "reference": "252a5c00351d071b4c9109deaff7bd0644eacc31"
+                "reference": "0d512fda0af3781c79c639d5e1124db71c44ab4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/view/zipball/252a5c00351d071b4c9109deaff7bd0644eacc31",
-                "reference": "252a5c00351d071b4c9109deaff7bd0644eacc31",
+                "url": "https://api.github.com/repos/jinyphp/view/zipball/0d512fda0af3781c79c639d5e1124db71c44ab4d",
+                "reference": "0d512fda0af3781c79c639d5e1124db71c44ab4d",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +504,7 @@
                 "framwork",
                 "jiny"
             ],
-            "time": "2018-07-10T02:36:10+00:00"
+            "time": "2018-07-19T08:58:48+00:00"
         },
         {
             "name": "liquid/liquid",

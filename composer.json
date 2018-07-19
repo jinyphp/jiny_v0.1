@@ -9,23 +9,22 @@
     ],
     "type": "project",
     "require": {
-        "jiny/theme": "^0.0.3",
         "erusev/parsedown": "^1.7",
-        "jiny/frontmatter": "^0.0.5",
-        "jiny/pages": "^0.0.3",
         "liquid/liquid": "^1.4",
-        "jiny/locale": "^0.0.2",
-        "jiny/template": "^0.0.3",
         "nadirhamid/docx-to-html": "^0.0.1",
         "sunra/php-simple-html-dom-parser": "^1.5",
         "symfony/filesystem": "^4.1",
-        "jiny/lamp": "^0.0.2",
         "nikic/fast-route": "^1.3",
-        "jiny/core": "^0.0.6",
-        "jiny/view": "^0.0.1",
-        "jiny/router": "^0.0.1",
         "jiny/menu": "^0.0.4",
-        "jiny/config": "^0.0.7"
+        "jiny/config": "^0.0.7",
+        "jiny/core": "^0.0.7",
+        "jiny/frontmatter": "^0.0.6",
+        "jiny/locale": "^0.0.3",
+        "jiny/lamp": "^0.0.3",
+        "jiny/pages": "^0.0.4",
+        "jiny/router": "^0.0.3",
+        "jiny/template": "^0.0.4",
+        "jiny/view": "^0.0.2"
     },
     "autoload": {
         "psr-4": {
