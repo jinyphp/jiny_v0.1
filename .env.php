@@ -15,11 +15,6 @@ return [
             "index.htm",
             "index.md",
             "index.docx"
-        ],
-        'menu'=>[
-            'type' => "json",
-            'path' => "/resource/menu",
-            'file' => "menu.json"
         ]
     ],
     'Tamplate'=> [

@@ -1,128 +1,26 @@
 [
     {
-        "name": "Framworks",
-        "href": "/jiny",
-        "ko": "지니",
-        "en": "jiny",
-        "menu": [
-            {
-                "name": "프레임웍",
-                "href": "/jiny",
-                "ko": "프레임웍",
-                "en": "프레임웍"
-            },
-            {
-                "name": "설치",
-                "href": "/jiny/setup",
-                "ko": "설치",
-                "en": "설치"
-            },
-            {
-                "name": "버젼",
-                "href": "\/jiny\/version",
-                "ko": "버젼",
-                "en": "버젼"
-            },
-            {
-                "name": "빠른시작",
-                "href": "\/jiny\/quick",
-                "ko": "빠른시작",
-                "en": "빠른시작"
-            },
-            {
-                "name": "구조",
-                "href": "\/jiny\/structure",
-                "ko": "구조",
-                "en": "구조"
-            },
-            {
-                "name": "템플릿",
-                "href": "\/jiny\/template",
-                "ko": "템플릿",
-                "en": "템플릿",
-                "menu": [
-                    {
-                        "name": "엔진",
-                        "href": "\/jiny\/template\/engine",
-                        "ko": "엔진",
-                        "en": "엔진"
-                    },
-                    {
-                        "name": "카페트(Carpet)",
-                        "href": "\/jiny\/template\/carpet",
-                        "ko": "카페트(Carpet)",
-                        "en": "카페트(Carpet)"
-                    },
-                    {
-                        "name": "리퀴드(Liquid)",
-                        "href": "\/jiny\/template\/liquid",
-                        "ko": "리퀴드(Liquid)",
-                        "en": "리퀴드(Liquid)"
-                    },
-                    {
-                        "name": "블레이드(Blade)",
-                        "href": "\/jiny\/template\/blade",
-                        "ko": "블레이드(Blade)",
-                        "en": "블레이드(Blade)"
-                    }
-                ]
-            }
-        ]
+        "name": "메뉴1",
+        "ko": "메뉴1",
+        "en": "menu1",
+        "href": "/menu1"
     },
     {
-        "name": "SRC",
-        "ko": "소스코드",
-        "en": "Source",
-        "href": "\/source"
+        "name": "메뉴2",
+        "ko": "메뉴2",
+        "en": "menu2",
+        "href": "/menu2"
     },
     {
-        "name": "PHP",
-        "href": "\/php",
-        "ko": "PHP",
-        "en": "PHP",
-        "menu": [
-            {
-                "name": "php1",
-                "href": "\/php\/php1",
-                "ko": "넘버원",
-                "en": "PHP1"
-            },
-            {
-                "name": "php2",
-                "href": "\/php\/php2",
-                "ko": "넘버투",
-                "en": "PHP2"
-            },
-            {
-                "name": "php3",
-                "href": "\/php\/php3",
-                "ko": "넘버쓰리",
-                "en": "PHP3"
-            }
-        ]
+        "name": "메뉴3",
+        "ko": "메뉴3",
+        "en": "menu3",
+        "href": "/menu3"
     },
     {
-        "name": "HTML",
-        "href": "\/html",
-        "ko": "HTML",
-        "en": "HTML"
-    },
-    {
-        "name": "Javascript",
-        "href": "\/javascript",
-        "ko": "Javascript",
-        "en": "Javascript"
-    },
-    {
-        "name": "GIT",
-        "href": "\/git",
-        "ko": "Git",
-        "en": "Git"
-    },
-    {
-        "name": "Server",
-        "href": "\/server",
-        "ko": "Server",
-        "en": "Server"
+        "name": "메뉴4",
+        "ko": "메뉴4",
+        "en": "menu4",
+        "href": "/menu4"
     }
 ]

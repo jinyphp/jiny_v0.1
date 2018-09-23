@@ -9,7 +9,6 @@ class HomeController extends Controller
 
     public function __construct($app=Null)
     {
-        \TimeLog::set(__CLASS__);
         //controller
         $this->setApp($app);
     }
@@ -17,13 +16,12 @@ class HomeController extends Controller
     // 기본실행 메서드
     public function index()
     {
-        \TimeLog::set(__METHOD__);
+        echo "Home 기본컨트롤러 실행<br>";
         return "Hi, Jiny!";
     }
 
     public function hello()
-    {
-        \TimeLog::set(__METHOD__);  
+    { 
         return $this->view();      
     }
 

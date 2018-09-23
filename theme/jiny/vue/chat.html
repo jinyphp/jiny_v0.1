@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: gainsboro;
+    }
+
+    #_before_login {
+        position: absolute;
+        width: 310px;
+        top: calc((100% -170px) / 2);
+        left: calc((100% - 310px) / 2);
+    }
+
+    #_before_login input {
+        height: 35px;
+        width: 310px;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    ._btn {
+        float: left;
+        width: 100%;
+        height: 35px;
+        background: #000;
+        color: #fff;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 35px;
+        cursor: pointer;
+    }
+
+    ._btn_sm {
+        width: 150px;
+    }
+
+    ._right {
+        float: right;
+    }
+
+    #_after_login {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #_btn_area {
+        height: 55px;
+        background: dimgray;
+        padding: 10px;
+    }
+
+    #_chat_area {
+        height: calc(100% - 215px);
+        overflow: auto;
+    }
+
+    #_chat_area ._chat {
+        clear: both;
+    }
+
+    #_chat_area ._chat>div {
+        float: left;
+    }
+
+    #_chat_area ._chat._right>div {
+        float: right;
+    }
+
+    #_chat_area ._chat ._msg,
+    #_chat_area ._chat ._file {
+        max-width: 60%;
+        padding: 10px;
+        margin: 10px;
+        background: #fff;
+        word-break: break-all;
+    }
+
+    #_chat_area ._chat._right ._msg,
+    #_chat_area ._chat._right ._file {
+        background: antiquewhite;
+    }
+
+    #_chat_area ._chat ._msg pre {
+        white-space: pre-wrap;
+    }
+
+    #_chat_area ._chat ._file a {
+        display: block;
+    }
+
+    #_chat_area ._chat ._file a img {
+        display: block;
+        max-width: 150px;
+    }
+
+    #_chat_area ._chat ._meta {
+        font-size: 9px;
+        color: #777;
+        margin-top: 15px;
+    }
+
+    #_chat_area ._chat._right ._meta {
+        text-align: right;
+    }
+
+
+
+    #_file_area {
+        height: 40px;
+        background: dimgray;
+        color: #fff;
+        padding: 0 20px;
+        line-height: 40px;
+    }
+
+    #_file_area span {
+        cursor: pointer;
+    }
+
+    #_file_area input {
+        display: none;
+    }
+
+    #_msg_area {
+        height: 120px;
+    }
+
+    #_msg_area textarea {
+        height: 120px;
+        width: calc(100% - 120px);
+        border: none;
+        vertical-align: bottom;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #_msg_area ._msg_btn {
+        height: 120px;
+        width: 120px;
+        line-height: 120px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #_user_list {
+        position: absolute;
+        z-index: 100;
+        width: 500px;
+        max-width: 70%;
+        height: calc(100% - 215px);
+        top: 55px;
+        background: #fff;
+        left: -2000px;
+        transition: all 0.5s ease-out;
+        padding: 10px;
+        overflow: auto;
+    }
+
+    #_user_list._show {
+        left: 0;
+    }
+
+    #_user_list ._user {
+        font-size: 11px;
+        color: #999;
+        margin-top: 10px;
+    }
+
+    #_user_list ._user._login {
+        color: #000;
+    }
+</style>
+
+<body>
+    <div id="_root">
+        <div id="_before_login" v-if="!uid">
+            <input type="text" placeholder="Email" v-model="email">
+            <input type="password" placeholder="Password" v-model="pw" @keypress.enter.prevent="_login">
+            <div class="_btn _btn_sm" @click="_login">Login</div>
+            <div class="_btn _btn_sm _right" @click="_join">Join</div>
+            <div class="_btn" @click="_google_login">Google Login</div>
+        </div>
+        <div id="_after_login" v-if="uid">
+            <div id="_btn_area">
+                <div class="_btn _btn_sm" @click="user_list_show = !user_list_show">User List</div>
+                <div class="_btn _btn_sm _right" @click="_logout">Logout</div>
+            </div>
+            <div id="_chat_area">
+                <div class="_chat" v-for="(v, k) in chat" :class="{_right: (v.uid == uid)}">
+                    <div class="_msg" v-if="v.msg">
+                        <pre>{{v.msg}}</pre>
+                    </div>
+                    <div class="_file" v-if="v.file">
+                        <a :href="vv.url" v-for="(vv, kk) in v.file" download :title="vv.size">
+                            <img :src="vv.url" :alt="vv.name" v-if="vv.type.indexOf('image')>-1" @load="_set_scroll_to_bottom">                            {{vv.name}}
+                        </a>
+                    </div>
+                    <div class="_meta">
+                        {{v.datetime}}
+                        <br>{{v.email}}
+                    </div>
+                </div>
+            </div>
+            <div id="_file_area">
+                new line : ctrl + enter
+                <span class="_right" @click="$refs.file_input.click()">upload files</span>
+                <input type="file" multiple @change="_upload" ref="file_input">
+            </div>
+            <div id="_msg_area">
+                <textarea v-model="msg" @keypress.enter.prevent="_chat" @keypress.ctrl.enter.prevent="_new_line"></textarea>
+                <div class="_msg_btn _right" @click="_chat">send msg</div>
+            </div>
+            <div id="_user_list" :class="{_show: user_list_show}">
+                <div class="_user" v-for="(v, k) in user" :class="{_login: v.isLogin}">
+                    {{v.email}} - {{v.updatedAt}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDpcS1wkJED3P2d7_DHsN0QPKzIPmnnD2w",
+            authDomain: "fir-vue-chatting.firebaseapp.com",
+            databaseURL: "https://fir-vue-chatting.firebaseio.com",
+            projectId: "fir-vue-chatting",
+            storageBucket: "fir-vue-chatting.appspot.com",
+            messagingSenderId: "718203221971"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.1/async.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        var chat_ref = firebase.database().ref("chat");
+        var user_ref = firebase.database().ref("user");
+        var file_ref = firebase.storage().ref("chat");
+
+        new Vue({
+            el: "#_root",
+            data: {
+                uid: "",
+                email: "",
+                pw: "",
+                msg: "",
+                chat: {},
+                user_list_show: false,
+                user: {}
+            },
+            created() {
+                var z = this;
+                firebase.auth().onAuthStateChanged(function (user) {
+                    if (user) {
+                        z.uid = user.uid;
+                        z.email = user.email;
+
+                        chat_ref.on("child_added", function (d) {
+                            Vue.set(z.chat, d.key, d.val());
+                            Vue.nextTick(z._set_scroll_to_bottom);
+                        })
+
+                        user_ref.on("child_added", function (d) {
+                            Vue.set(z.user, d.key, d.val());
+                            Vue.nextTick();
+                        })
+
+                        user_ref.on("child_changed", function (d) {
+                            Vue.set(z.user, d.key, d.val());
+                            Vue.nextTick();
+                        })
+
+                        user_ref.child(z.uid).once("value", function (d) {
+                            if (d.val()) {
+                                user_ref.child(z.uid).update({
+                                    updatedAt: Date(),
+                                    isLogin: true
+                                });
+                            } else {
+                                user_ref.child(z.uid).set({
+                                    email: z.email,
+                                    createdAt: Date(),
+                                    updatedAt: Date(),
+                                    isLogin: true
+                                });
+                            }
+                        })
+                    } else {
+                        z.uid = "";
+                    }
+                })
+            },
+            methods: {
+                _login() {
+                    firebase.auth().signInWithEmailAndPassword(this.email, this.pw)
+                        .catch(function (err) {
+                            alert(err);
+                        })
+                },
+                _join() {
+                    firebase.auth().createUserWithEmailAndPassword(this.email, this.pw)
+                        .catch(function (err) {
+                            alert(err);
+                        })
+                },
+                _google_login() {
+                    var provider = new firebase.auth.GoogleAuthProvider();
+                    firebase.auth().signInWithPopup(provider)
+                        .catch(function (err) {
+                            alert(err);
+                        })
+                },
+                _logout() {
+                    user_ref.child(this.uid).update({
+                        isLogin: false
+                    })
+                    firebase.auth().signOut()
+                        .catch(function (err) {
+                            alert(err);
+                        })
+                },
+                _chat() {
+                    //console.log(event);
+                    if (!this.msg || event.ctrlKey) return;
+                    chat_ref.push({
+                        msg: this.msg,
+                        datetime: Date(),
+                        uid: this.uid,
+                        email: this.email
+                    })
+                    this.msg = "";
+
+                },
+                _new_line() {
+                    this.msg += "\n";
+                },
+                _set_scroll_to_bottom() {
+                    var x = this.$el.querySelector("#_chat_area");
+                    x.scrollTop = x.scrollHeight;
+                },
+                _upload() {
+                    //console.log(event);
+                    var z = this;
+                    var f = event.target.files;
+                    var info = [];
+
+                    async.each(f, function (file, next) {
+                        var task = file_ref.child(file.name).put(file);
+                        task.on("state_changed", function (s) { }, function (e) { }, function () {
+                            task.snapshot.ref.getDownloadURL().then(function (url) {
+                                info.push({
+                                    name: file.name,
+                                    type: file.type,
+                                    size: file.size,
+                                    url: url
+                                });
+
+                                next();
+                            })
+                        })
+                    }, function (err) {
+                        chat_ref.push({
+                            file: info,
+                            datetime: Date(),
+                            uid: z.uid,
+                            email: z.email
+                        })
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
