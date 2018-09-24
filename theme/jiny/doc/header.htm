@@ -1,0 +1,87 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Jiny</a>
+    </div>
+    <!-- /.navbar-header -->
+
+
+    <!-- 좌측메뉴를 출력합니다.-->
+    <!-- .sidebar-collapse-->
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+
+            {% if menus %}
+            <ul class="nav" id="side-menu">
+                {% for menu1 in menus %}
+                <li>
+                    <a href='{{ menu1.href }}'>
+                        
+                        {% if language == "en" %}
+                            {{ menu1.en }}
+                        {% else %}
+                            {{ menu1.ko }}
+                        {% endif %}
+
+                    {% if menu1.menu %}
+                    <!-- 서브메뉴가 존재하는 경우-->
+                    <span class="fa arrow"></span>
+                    </a>
+                        <ul class="nav nav-second-level">
+                        {% for menu2 in menu1.menu %}
+                            <li>
+                                <a href='{{ menu2.href }}'>
+                                {% if language == "en" %}
+                                    {{ menu2.en }}
+                                {% else %}
+                                    {{ menu2.ko }}
+                                {% endif %}
+
+                                {% if menu2.menu %}
+                                <span class="fa arrow"></span>
+                                </a>
+                                    <ul class="nav nav-third-level">
+                                    {% for menu3 in menu2.menu %}
+                                        <li>
+                                            <a href='{{ menu3.href }}'>
+                                            {% if language == "en" %}
+                                                {{ menu3.en }}
+                                            {% else %}
+                                                {{ menu3.ko }}
+                                            {% endif %}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                    </ul>
+
+                                {% else %}
+                                </a>
+                                {% endif %}
+
+
+                            </li>                         
+                        {% endfor %}
+                        </ul>
+
+                    {% else %}
+                    </a>
+                    {% endif %}
+                    
+
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+        </div>
+        <!-- /.sidebar-collapse -->
+    </div>
+
+    <!-- /.navbar-static-side -->
+</nav>
