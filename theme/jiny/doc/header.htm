@@ -10,6 +10,40 @@
         <a class="navbar-brand" href="/">Jiny</a>
     </div>
     <!-- /.navbar-header -->
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-messages">
+                <li>
+                    <a href="/ko">                        
+                        <div>
+                            <strong>Korean</strong>                            
+                        </div>                                            
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="/en">
+                        <div>
+                            <strong>English</strong>                            
+                        </div>                        
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="/ja">
+                        <div>
+                            <strong>Japanese</strong>                            
+                        </div>                        
+                    </a>
+                </li>
+            </ul>
+            <!-- /.dropdown-messages -->
+        </li>
+    </ul>
 
 
     <!-- 좌측메뉴를 출력합니다.-->
@@ -21,13 +55,14 @@
             <ul class="nav" id="side-menu">
                 {% for menu1 in menus %}
                 <li>
-                    <a href='{{ menu1.href }}'>
-                        
-                        {% if language == "en" %}
-                            {{ menu1.en }}
-                        {% else %}
-                            {{ menu1.ko }}
-                        {% endif %}
+        
+                    {% if language == "en" %}
+                        <a href='/en{{ menu1.href }}'>
+                        {{ menu1.en }}
+                    {% else %}
+                        <a href='/ko{{ menu1.href }}'>
+                        {{ menu1.ko }}
+                    {% endif %}
 
                     {% if menu1.menu %}
                     <!-- 서브메뉴가 존재하는 경우-->
@@ -36,10 +71,11 @@
                         <ul class="nav nav-second-level">
                         {% for menu2 in menu1.menu %}
                             <li>
-                                <a href='{{ menu2.href }}'>
                                 {% if language == "en" %}
+                                    <a href='/en{{ menu2.href }}'>
                                     {{ menu2.en }}
                                 {% else %}
+                                    <a href='/ko{{ menu2.href }}'>
                                     {{ menu2.ko }}
                                 {% endif %}
 
@@ -49,10 +85,11 @@
                                     <ul class="nav nav-third-level">
                                     {% for menu3 in menu2.menu %}
                                         <li>
-                                            <a href='{{ menu3.href }}'>
                                             {% if language == "en" %}
+                                                <a href='/en{{ menu3.href }}'>
                                                 {{ menu3.en }}
                                             {% else %}
+                                                <a href='/ko{{ menu3.href }}'>
                                                 {{ menu3.ko }}
                                             {% endif %}
                                             </a>
