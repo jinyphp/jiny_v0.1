@@ -43,23 +43,23 @@
     define("ROOT", "..");
     define("ROOT_PUBLIC","");
     
- /**
- * 오토로드 설정
- * 오토로드 파일이 없는 경우 실행을 중단합니다.
- * composer install 실행필요
- */
-$autoload = ROOT.DS."vendor".DS."autoload.php";
-if(file_exists($autoload)){
-    require_once $autoload;
+    /**
+     * 오토로드 설정
+     * 오토로드 파일이 없는 경우 실행을 중단합니다.
+     * composer install 실행필요
+     */
+    $autoload = ROOT.DS."vendor".DS."autoload.php";
+    if(file_exists($autoload)){
+        require_once $autoload;
 
-    // Jiny Framwork Application
-    // __construction()이 실행이 됩니다.
-    $app = new \Jiny\Core\Application();
-    $app->run();
-    
-} else {
-    echo "composer autoload가 설정되어 있지 않습니다.<br>";
-}
+        // Jiny Framwork Application
+        // __construction()이 실행이 됩니다.
+        $app = new \Jiny\Core\Application();
+        $app->run();
+        
+    } else {
+        echo "composer autoload가 설정되어 있지 않습니다.<br>";
+    }
     
     TimeLog::set("END");
     // TimeLog::print();

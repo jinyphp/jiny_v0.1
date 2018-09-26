@@ -1,5 +1,4 @@
 <?php
-
 /**
 * JINY - A PHP Framework
 *
@@ -7,17 +6,9 @@
 * @author   Hojin Lee <infohojin@gmail.com>
 */
 define('JINY_START', microtime(true));
+
 require "./public/TimeLog.php";
-
 TimeLog::init(); 
-
-/*
-// 캐쉬방지 처리 해더 전송
-header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
-header('Pragma: no-cache'); // HTTP 1.0.
-header('Expires: 0'); // Proxies.
-*/
-
 
 // 에러 메세지 출력
 if (php_sapi_name() == "cli-server") {
@@ -37,7 +28,7 @@ if (DS == "/") {
 }
 
 // 상대입력값의 절대경로를 저장합니다.
-// 3권 236페이지 참조
+// page 3.236
 define("ROOTPATH", realpath("."));
 
 define("ROOT", ".");
@@ -63,5 +54,3 @@ if(file_exists($autoload)){
     exit;
 }
 
-// TimeLog::set("END");
-// TimeLog::monitor();

@@ -1,6 +1,8 @@
 .ftpignore
 .ftpconfig.php
-/vendor
 
+lamp
+
+/vendor
 /public/_
 

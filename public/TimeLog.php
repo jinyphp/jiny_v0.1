@@ -1,21 +1,40 @@
 <?php
+/*
+ * This file is part of the jinyPHP package.
+ *
+ * (c) hojinlee <infohojin@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 class TimeLog
 {
     public static $START;
     public static $Logs=[];
 
+    /**
+     * 
+     */
     public static function init()
     {
         self::$START = microtime();
         array_push(self::$Logs, microtime()."=START");
     }
 
+
+    /**
+     * 
+     */
     public static function time()
     {
         $sec = explode(" ", microtime());
         return $sec[0];
     }
 
+
+    /**
+     * 
+     */
     public static function set($msg=NULL)
     {
         // $END = microtime(true)-self::$START;
@@ -23,6 +42,10 @@ class TimeLog
         //self::$Logs= microtime()."=".$msg;
     }
 
+
+    /**
+     * 
+     */
     public static function print()
     {
         echo "<pre>";
@@ -30,6 +53,10 @@ class TimeLog
         echo "</pre>";
     }
 
+
+    /**
+     * 
+     */
     public static function monitor()
     {
         echo "<script>";
@@ -50,6 +77,10 @@ class TimeLog
         echo "</script>";
     }
 
+
+    /**
+     * 
+     */
     public static function concole($msg)
     {
         echo "<script>console.log(\"$msg\");</script>";

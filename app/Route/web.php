@@ -33,24 +33,3 @@ $r->get('/message', function($vars=[]){
 $r->get('/datas', function($vars=[]){
     return [1, 2, 3, 4, 5, 6, 7, 8, 9];
 });
-
- /*
-
-
-$r->addRoute('GET', '/post/{name}', function($vars){
-    $this->App->_controller = "PostController";
-    $this->App->_action = 'postView';
-    $this->App->_viewFile = "/post";
-    //print_r($vars);
-    //return view("/post");
-});
-*/
-
-
-
-$r->get('/admin/menu', function(){
-    $this->App->_controller = "MenuController";
-    $this->App->_action = 'index';
-
-    $this->App->_viewFile = "/menu";
-});
