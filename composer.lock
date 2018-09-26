@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f5d7983b89d91e5b126578dea81aad5",
+    "content-hash": "fb40fb074af63cd9cc3ec5221b57a9f0",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -54,16 +54,16 @@
         },
         {
             "name": "jiny/config",
-            "version": "0.0.8",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/config.git",
-                "reference": "92b03ac67f282aa76519299dee2a6b92551fdbc9"
+                "reference": "1ad53d2a5a6523a8b569643d7f3b1a3e24ed6922"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/config/zipball/92b03ac67f282aa76519299dee2a6b92551fdbc9",
-                "reference": "92b03ac67f282aa76519299dee2a6b92551fdbc9",
+                "url": "https://api.github.com/repos/jinyphp/config/zipball/1ad53d2a5a6523a8b569643d7f3b1a3e24ed6922",
+                "reference": "1ad53d2a5a6523a8b569643d7f3b1a3e24ed6922",
                 "shasum": ""
             },
             "require": {
@@ -89,27 +89,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny config",
+            "description": "jinyPHP config",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "config",
                 "framwork",
-                "jiny"
+                "jinyphp"
             ],
-            "time": "2018-07-21T08:31:15+00:00"
+            "time": "2018-09-26T08:36:47+00:00"
         },
         {
             "name": "jiny/core",
-            "version": "0.0.10",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/core.git",
-                "reference": "732be3fa8e655918b0e23ba6c9346522037bf352"
+                "reference": "63522f80c43bb820b025ee5b8bd2ec5ef764126c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/core/zipball/732be3fa8e655918b0e23ba6c9346522037bf352",
-                "reference": "732be3fa8e655918b0e23ba6c9346522037bf352",
+                "url": "https://api.github.com/repos/jinyphp/core/zipball/63522f80c43bb820b025ee5b8bd2ec5ef764126c",
+                "reference": "63522f80c43bb820b025ee5b8bd2ec5ef764126c",
                 "shasum": ""
             },
             "require": {
@@ -135,26 +135,26 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny framwork core",
+            "description": "jinyPHP core",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny"
+                "jinyphp"
             ],
-            "time": "2018-07-21T10:26:42+00:00"
+            "time": "2018-09-26T12:55:45+00:00"
         },
         {
             "name": "jiny/frontmatter",
-            "version": "0.0.7",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/frontmatter.git",
-                "reference": "5e116932c4c77042f75434406bfd4e11523f9a58"
+                "reference": "b5e8db5af7d9282dd9ebbf6fbbeacff69b371391"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/5e116932c4c77042f75434406bfd4e11523f9a58",
-                "reference": "5e116932c4c77042f75434406bfd4e11523f9a58",
+                "url": "https://api.github.com/repos/jinyphp/frontmatter/zipball/b5e8db5af7d9282dd9ebbf6fbbeacff69b371391",
+                "reference": "b5e8db5af7d9282dd9ebbf6fbbeacff69b371391",
                 "shasum": ""
             },
             "require": {
@@ -181,27 +181,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny frontMatter",
+            "description": "jinyPHP frontMatter",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
                 "frontmatter",
-                "jiny"
+                "jinyphp"
             ],
-            "time": "2018-07-21T08:51:26+00:00"
+            "time": "2018-09-26T09:10:03+00:00"
         },
         {
             "name": "jiny/lamp",
-            "version": "0.0.3",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/lamp.git",
-                "reference": "5eaedbd5ee8dc5768ebe3caa304250297ca8f1d7"
+                "reference": "0528a532253c4f802501bcba556b118de2e5daba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/lamp/zipball/5eaedbd5ee8dc5768ebe3caa304250297ca8f1d7",
-                "reference": "5eaedbd5ee8dc5768ebe3caa304250297ca8f1d7",
+                "url": "https://api.github.com/repos/jinyphp/lamp/zipball/0528a532253c4f802501bcba556b118de2e5daba",
+                "reference": "0528a532253c4f802501bcba556b118de2e5daba",
                 "shasum": ""
             },
             "require": {
@@ -227,28 +227,28 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny console",
+            "description": "jinyPHP CLI",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "console",
                 "framwork",
-                "jiny",
+                "jinyphp",
                 "lamp"
             ],
-            "time": "2018-07-19T08:35:32+00:00"
+            "time": "2018-09-26T12:35:03+00:00"
         },
         {
             "name": "jiny/locale",
-            "version": "0.0.3",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/locale.git",
-                "reference": "ecb2cf2950a8216c09ce572de53ab03f39fca9af"
+                "reference": "5276e1b9b60d0767cb62ea188699178477ac7e80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/locale/zipball/ecb2cf2950a8216c09ce572de53ab03f39fca9af",
-                "reference": "ecb2cf2950a8216c09ce572de53ab03f39fca9af",
+                "url": "https://api.github.com/repos/jinyphp/locale/zipball/5276e1b9b60d0767cb62ea188699178477ac7e80",
+                "reference": "5276e1b9b60d0767cb62ea188699178477ac7e80",
                 "shasum": ""
             },
             "require": {
@@ -258,7 +258,10 @@
             "autoload": {
                 "psr-4": {
                     "Jiny\\Locale\\": "src/"
-                }
+                },
+                "files": [
+                    "src/Helpers/Helper.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -271,27 +274,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "JINY Locale",
+            "description": "jinyPHP Locale",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny",
+                "jinyphp",
                 "locale"
             ],
-            "time": "2018-07-19T08:37:20+00:00"
+            "time": "2018-09-26T09:46:49+00:00"
         },
         {
             "name": "jiny/menu",
-            "version": "0.0.5",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/menu.git",
-                "reference": "24040e58716b58828b7de49b3381f5ed4d807ccc"
+                "reference": "6388f9d51360673c70dbce751c02d857fea3107a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/menu/zipball/24040e58716b58828b7de49b3381f5ed4d807ccc",
-                "reference": "24040e58716b58828b7de49b3381f5ed4d807ccc",
+                "url": "https://api.github.com/repos/jinyphp/menu/zipball/6388f9d51360673c70dbce751c02d857fea3107a",
+                "reference": "6388f9d51360673c70dbce751c02d857fea3107a",
                 "shasum": ""
             },
             "require": {
@@ -317,27 +320,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny Framwork Menu",
+            "description": "jinyPHP Framwork Menu",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny",
+                "jinyphp",
                 "menu"
             ],
-            "time": "2018-07-21T08:53:43+00:00"
+            "time": "2018-09-26T11:23:23+00:00"
         },
         {
             "name": "jiny/pages",
-            "version": "0.0.5",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/pages.git",
-                "reference": "86df0450ea663a7528ea7424d3224405c3213b46"
+                "reference": "605a2fcfea9a3bae16e5b1eab8a37a02ecde2299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/pages/zipball/86df0450ea663a7528ea7424d3224405c3213b46",
-                "reference": "86df0450ea663a7528ea7424d3224405c3213b46",
+                "url": "https://api.github.com/repos/jinyphp/pages/zipball/605a2fcfea9a3bae16e5b1eab8a37a02ecde2299",
+                "reference": "605a2fcfea9a3bae16e5b1eab8a37a02ecde2299",
                 "shasum": ""
             },
             "require": {
@@ -363,27 +366,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny Pages controllers",
+            "description": "jinyPHP Pages CMS",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny",
+                "jinyphp",
                 "pages"
             ],
-            "time": "2018-07-21T08:56:19+00:00"
+            "time": "2018-09-26T11:40:38+00:00"
         },
         {
             "name": "jiny/router",
-            "version": "0.0.4",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/router.git",
-                "reference": "3e594a67027dccbdb069c51f83b7c4697ed3069f"
+                "reference": "14e849f37edf0d402175426ff38d85d18f964774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/router/zipball/3e594a67027dccbdb069c51f83b7c4697ed3069f",
-                "reference": "3e594a67027dccbdb069c51f83b7c4697ed3069f",
+                "url": "https://api.github.com/repos/jinyphp/router/zipball/14e849f37edf0d402175426ff38d85d18f964774",
+                "reference": "14e849f37edf0d402175426ff38d85d18f964774",
                 "shasum": ""
             },
             "require": {
@@ -409,27 +412,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny router",
+            "description": "jinyPHP Router",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny",
+                "jinyphp",
                 "router"
             ],
-            "time": "2018-07-21T09:00:56+00:00"
+            "time": "2018-09-26T11:56:59+00:00"
         },
         {
             "name": "jiny/template",
-            "version": "0.0.4",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/template.git",
-                "reference": "c5cb927ec7a7ecc76a7d19bb802849f66f8d1f68"
+                "reference": "feea1fd4288ec867af483f929fc9a7d4758f7c10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/template/zipball/c5cb927ec7a7ecc76a7d19bb802849f66f8d1f68",
-                "reference": "c5cb927ec7a7ecc76a7d19bb802849f66f8d1f68",
+                "url": "https://api.github.com/repos/jinyphp/template/zipball/feea1fd4288ec867af483f929fc9a7d4758f7c10",
+                "reference": "feea1fd4288ec867af483f929fc9a7d4758f7c10",
                 "shasum": ""
             },
             "require": {
@@ -452,27 +455,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny Template",
+            "description": "jinyPHP Template",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny",
+                "jinyphp",
                 "template"
             ],
-            "time": "2018-07-19T08:56:20+00:00"
+            "time": "2018-09-26T12:03:34+00:00"
         },
         {
             "name": "jiny/theme",
-            "version": "0.0.5",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/theme.git",
-                "reference": "4635ac47bb849d4f7ea840a3a4244c6d32815f7b"
+                "reference": "0c9c3a76613d529fe224e9d76793b1b1361c6a47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/theme/zipball/4635ac47bb849d4f7ea840a3a4244c6d32815f7b",
-                "reference": "4635ac47bb849d4f7ea840a3a4244c6d32815f7b",
+                "url": "https://api.github.com/repos/jinyphp/theme/zipball/0c9c3a76613d529fe224e9d76793b1b1361c6a47",
+                "reference": "0c9c3a76613d529fe224e9d76793b1b1361c6a47",
                 "shasum": ""
             },
             "require": {
@@ -498,27 +501,27 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny Framwork Theme",
+            "description": "jinyPHP Framwork Theme",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny",
+                "jinyphp",
                 "theme"
             ],
-            "time": "2018-07-21T09:02:46+00:00"
+            "time": "2018-09-26T12:08:41+00:00"
         },
         {
             "name": "jiny/view",
-            "version": "0.0.3",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/view.git",
-                "reference": "7c4ec0c113d92d86999e0a5e526053eb7f34fc4c"
+                "reference": "be1ed00b0411136d4a282fd4a73d5396d122fa06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/view/zipball/7c4ec0c113d92d86999e0a5e526053eb7f34fc4c",
-                "reference": "7c4ec0c113d92d86999e0a5e526053eb7f34fc4c",
+                "url": "https://api.github.com/repos/jinyphp/view/zipball/be1ed00b0411136d4a282fd4a73d5396d122fa06",
+                "reference": "be1ed00b0411136d4a282fd4a73d5396d122fa06",
                 "shasum": ""
             },
             "require": {
@@ -544,13 +547,14 @@
                     "homepage": "http://hojin.io"
                 }
             ],
-            "description": "jiny framwork core",
+            "description": "jinyPHP view",
             "homepage": "http://jiny.hojin.io",
             "keywords": [
                 "framwork",
-                "jiny"
+                "jinyphp",
+                "view"
             ],
-            "time": "2018-07-21T09:04:13+00:00"
+            "time": "2018-09-26T12:17:06+00:00"
         },
         {
             "name": "liquid/liquid",
@@ -741,16 +745,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.1.1",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "562bf7005b55fd80d26b582d28e3e10f2dd5ae9c"
+                "reference": "c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/562bf7005b55fd80d26b582d28e3e10f2dd5ae9c",
-                "reference": "562bf7005b55fd80d26b582d28e3e10f2dd5ae9c",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e",
+                "reference": "c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e",
                 "shasum": ""
             },
             "require": {
@@ -787,29 +791,32 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30T07:26:09+00:00"
+            "time": "2018-08-18T16:52:46+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae"
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
-                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -842,20 +849,20 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-04-30T19:57:29+00:00"
+            "time": "2018-08-06T14:22:27+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.1",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "80e4bfa9685fc4a09acc4a857ec16974a9cd944e"
+                "reference": "b832cc289608b6d305f62149df91529a2ab3c314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/80e4bfa9685fc4a09acc4a857ec16974a9cd944e",
-                "reference": "80e4bfa9685fc4a09acc4a857ec16974a9cd944e",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b832cc289608b6d305f62149df91529a2ab3c314",
+                "reference": "b832cc289608b6d305f62149df91529a2ab3c314",
                 "shasum": ""
             },
             "require": {
@@ -901,7 +908,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30T07:26:09+00:00"
+            "time": "2018-08-18T16:52:46+00:00"
         },
         {
             "name": "webuni/front-matter",
