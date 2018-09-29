@@ -104,12 +104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/core.git",
-                "reference": "63522f80c43bb820b025ee5b8bd2ec5ef764126c"
+                "reference": "f7039b2c933a452aedb5c508b680c0eda8703d54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/core/zipball/63522f80c43bb820b025ee5b8bd2ec5ef764126c",
-                "reference": "63522f80c43bb820b025ee5b8bd2ec5ef764126c",
+                "url": "https://api.github.com/repos/jinyphp/core/zipball/f7039b2c933a452aedb5c508b680c0eda8703d54",
+                "reference": "f7039b2c933a452aedb5c508b680c0eda8703d54",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
                 "framwork",
                 "jinyphp"
             ],
-            "time": "2018-09-26T12:55:45+00:00"
+            "time": "2018-09-26T16:47:55+00:00"
         },
         {
             "name": "jiny/frontmatter",
@@ -289,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/menu.git",
-                "reference": "6388f9d51360673c70dbce751c02d857fea3107a"
+                "reference": "5fcb9a7db33fff0bb3eacaea8f30b6f574589b69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/menu/zipball/6388f9d51360673c70dbce751c02d857fea3107a",
-                "reference": "6388f9d51360673c70dbce751c02d857fea3107a",
+                "url": "https://api.github.com/repos/jinyphp/menu/zipball/5fcb9a7db33fff0bb3eacaea8f30b6f574589b69",
+                "reference": "5fcb9a7db33fff0bb3eacaea8f30b6f574589b69",
                 "shasum": ""
             },
             "require": {
@@ -327,7 +327,7 @@
                 "jinyphp",
                 "menu"
             ],
-            "time": "2018-09-26T11:23:23+00:00"
+            "time": "2018-09-29T13:59:57+00:00"
         },
         {
             "name": "jiny/pages",
@@ -470,12 +470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jinyphp/theme.git",
-                "reference": "0c9c3a76613d529fe224e9d76793b1b1361c6a47"
+                "reference": "01909ca089e3f06c58ab97ad4f4a23ab63aae03e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jinyphp/theme/zipball/0c9c3a76613d529fe224e9d76793b1b1361c6a47",
-                "reference": "0c9c3a76613d529fe224e9d76793b1b1361c6a47",
+                "url": "https://api.github.com/repos/jinyphp/theme/zipball/01909ca089e3f06c58ab97ad4f4a23ab63aae03e",
+                "reference": "01909ca089e3f06c58ab97ad4f4a23ab63aae03e",
                 "shasum": ""
             },
             "require": {
@@ -508,7 +508,7 @@
                 "jinyphp",
                 "theme"
             ],
-            "time": "2018-09-26T12:08:41+00:00"
+            "time": "2018-09-29T14:02:47+00:00"
         },
         {
             "name": "jiny/view",
