@@ -1,0 +1,63 @@
+---
+css:
+- "/assets/carousel.css"
+---
+
+<!--
+	부트스트랩4 Carousel 슬라이더
+	https://getbootstrap.com/docs/4.0/components/carousel/
+-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<!--하단 단추-->
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<!--슬라이드 01-->
+		<div class="carousel-item active">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>JINYPHP English</h1>
+					<p>지니는 PHP기반의 Framwork입니다.</p>
+
+				</div>
+			</div>
+		</div>
+
+		<!--슬라이드 02-->
+		<div class="carousel-item">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>Static Website</h1>
+					<p>기본 pages 패키지를 통하여 마크다운기반의 웹사이트를 생성할 수 있습니다.</p>
+
+				</div>
+			</div>
+		</div>
+
+		<!--슬라이드 03-->
+		<div class="carousel-item">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>Theme</h1>
+					<p>테마 기능을 통한 웹사이드 디자인.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--이전 버튼-->
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+
+	<!--다음 버튼-->
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>

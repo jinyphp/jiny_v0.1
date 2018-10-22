@@ -1,14 +1,21 @@
 {
     "name": "jiny/jiny",
     "description": "jinyPHP Web Freamwork",
+    "keywords": [
+        "jinyPHP",
+        "framwork"
+    ],
     "authors": [
         {
             "name": "hojinlee",
             "email": "infohojin@gmail.com"
         }
     ],
+    "homepage": "http://www.jinyphp.com",
     "type": "project",
+    "license": "MIT",
     "require": {
+        "php": ">= 7.0",
         "erusev/parsedown": "^1.7",
         "liquid/liquid": "^1.4",
         "nadirhamid/docx-to-html": "^0.0.1",

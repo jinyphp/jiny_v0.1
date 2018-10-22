@@ -51,70 +51,70 @@
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
 
-            {% if menus %}
+            {%- if menus -%}
             <ul class="nav" id="side-menu">
-                {% for menu1 in menus %}
+                {%- for menu1 in menus -%}
                 <li>
         
-                    {% if language == "en" %}
-                        <a href='/en{{ menu1.href }}'>
-                        {{ menu1.en }}
-                    {% else %}
-                        <a href='/ko{{ menu1.href }}'>
-                        {{ menu1.ko }}
-                    {% endif %}
+                    {%- if language == "en" -%}
+                        <a href='/en{{- menu1.href -}}'>
+                        {{- menu1.en -}}
+                    {%- else -%}
+                        <a href='/ko{{- menu1.href -}}'>
+                        {{- menu1.ko -}}
+                    {%- endif -%}
 
-                    {% if menu1.menu %}
+                    {%- if menu1.menu -%}
                     <!-- 서브메뉴가 존재하는 경우-->
                     <span class="fa arrow"></span>
                     </a>
                         <ul class="nav nav-second-level">
-                        {% for menu2 in menu1.menu %}
+                        {%- for menu2 in menu1.menu -%}
                             <li>
-                                {% if language == "en" %}
-                                    <a href='/en{{ menu2.href }}'>
-                                    {{ menu2.en }}
-                                {% else %}
-                                    <a href='/ko{{ menu2.href }}'>
-                                    {{ menu2.ko }}
-                                {% endif %}
+                                {%- if language == "en" -%}
+                                    <a href='/en{{- menu2.href -}}'>
+                                    {{- menu2.en -}}
+                                {%- else -%}
+                                    <a href='/ko{{- menu2.href -}}'>
+                                    {{- menu2.ko -}}
+                                {%- endif -%}
 
-                                {% if menu2.menu %}
+                                {%- if menu2.menu -%}
                                 <span class="fa arrow"></span>
                                 </a>
                                     <ul class="nav nav-third-level">
-                                    {% for menu3 in menu2.menu %}
+                                    {%- for menu3 in menu2.menu -%}
                                         <li>
-                                            {% if language == "en" %}
-                                                <a href='/en{{ menu3.href }}'>
-                                                {{ menu3.en }}
-                                            {% else %}
-                                                <a href='/ko{{ menu3.href }}'>
-                                                {{ menu3.ko }}
-                                            {% endif %}
+                                            {%- if language == "en" -%}
+                                                <a href='/en{{- menu3.href -}}'>
+                                                {{- menu3.en -}}
+                                            {%- else -%}
+                                                <a href='/ko{{- menu3.href -}}'>
+                                                {{- menu3.ko -}}
+                                            {%- endif -%}
                                             </a>
                                         </li>
-                                    {% endfor %}
+                                    {%- endfor -%}
                                     </ul>
 
-                                {% else %}
+                                {%- else -%}
                                 </a>
-                                {% endif %}
+                                {%- endif -%}
 
 
                             </li>                         
-                        {% endfor %}
+                        {%- endfor -%}
                         </ul>
 
-                    {% else %}
+                    {%- else -%}
                     </a>
-                    {% endif %}
+                    {%- endif -%}
                     
 
                 </li>
-                {% endfor %}
+                {%- endfor -%}
             </ul>
-            {% endif %}
+            {%- endif -%}
 
         </div>
         <!-- /.sidebar-collapse -->
