@@ -15,7 +15,7 @@
                 {%- for menu in menus -%}
                     <li class="nav-item">
                         <a class="nav-link" href='{{- menu.href -}}'>
-                        {%- if language == "en" -%}
+                        {%- if sys.language == "en" -%}
                             {{- menu.en -}}
                         {%- else -%}
                             {{- menu.ko -}}

@@ -6,11 +6,11 @@ submenus:
 ---
 
 <div class="container">
-	{% if Page.title %}
-    <h1 class="mt-4 mb-3">{{ Page.title }}
-        <small>{{ Page.subtitle }}</small>
+	{%- if Page.title -%}
+    <h1 class="mt-4 mb-3">{{- Page.title -}}
+        <small>{{- Page.subtitle -}}</small>
 	</h1>
-	{% endif %}
+	{%- endif -%}
         
     <nav class="breadcrumb">
         <a class="breadcrumb-item" href="/">Home</a>
@@ -23,28 +23,28 @@ submenus:
         
         <!-- 본문내용 -->
         <div class="col-lg-9 mb-4">
-			{{ content }}
+			{{- content -}}
         </div>
 
         <!-- 좌측메뉴 -->
         <div class="col-lg-3 mb-4">
 			<div class="list-group">
-                {% if page.submenus %}                    
-                    {% for submenu in page.submenus %}
-                        {% if url == submenu.link %}
-                            <a href="{{submenu.link}}" class="list-group-item active">{{ submenu.name }}</a>
-                        {% else %}
-                            <a href="{{submenu.link}}" class="list-group-item">{{ submenu.name }}</a>   
-                        {% endif %}
+                {%- if page.submenus -%}                    
+                    {%- for submenu in page.submenus -%}
+                        {%- if url == submenu.link -%}
+                            <a href="{{-submenu.link-}}" class="list-group-item active">{{- submenu.name -}}</a>
+                        {%- else -%}
+                            <a href="{{-submenu.link-}}" class="list-group-item">{{- submenu.name -}}</a>   
+                        {%- endif -%}
                         
-                        {% if submenu.menu %}
-                            {% for sub in submenu.menu %}
-                            <a href="{{sub.link}}" class="list-group-item">- {{ sub.name }}</a> 
-                            {% endfor %}
-                        {% endif %}
+                        {%- if submenu.menu -%}
+                            {%- for sub in submenu.menu -%}
+                            <a href="{{sub.link}}" class="list-group-item">- {{- sub.name -}}</a> 
+                            {%- endfor -%}
+                        {%- endif -%}
                         
-                    {% endfor %}                  
-                {% endif %}
+                    {%- endfor -%}                  
+                {%- endif -%}
             </div>
             <br>
             

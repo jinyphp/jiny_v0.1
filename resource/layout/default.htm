@@ -1,9 +1,9 @@
 <div class="container">
-    {% if page.title %}
-    <h1 class="mt-4 mb-3">{{ page.title }}
-        <small>{{ page.subtitle }}</small>
+    {%- if page.title -%}
+    <h1 class="mt-4 mb-3">{{- page.title -}}
+        <small>{{- page.subtitle -}}</small>
     </h1>
-    {% endif %}
+    {%- endif -%}
 
     <nav class="breadcrumb">
         <a class="breadcrumb-item" href="/">Home</a>
@@ -16,12 +16,12 @@
 
         <!-- 본문내용 -->
         <div class="col-lg-9 mb-4">
-            {{ content }}
+            {{- content -}}
         </div>
 
         <!-- 좌측메뉴 -->
         <div class="col-lg-3 mb-4">
-                {% include submenu.htm %} 
+                {%- include submenu.htm -%} 
         </div>
 
     </div>

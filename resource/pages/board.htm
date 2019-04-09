@@ -1,0 +1,17 @@
+---
+layout: board
+javascript: "/public/assets/board.js"
+---
+
+<div class="container">
+    <h1>계시판</h1>
+    <hr>
+
+    {{- data.list -}}
+
+    {{- data.pagenation -}}
+    전체 수량 : {{- data.count -}}
+    {{- data.new -}}
+
+</div>
+

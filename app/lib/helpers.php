@@ -1,5 +1,11 @@
 <?php
 
+/*
+if (!function_exists('liquid')) {
+
+}
+*/
+
 function greet() {
 	return 'Hello, World!';
 }

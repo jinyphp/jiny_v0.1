@@ -1,0 +1,19 @@
+---
+layout: board
+javascript: "/public/assets/board.js"
+---
+
+# 글수정
+
+<form action="" method='post' id='board'>
+
+    <input type="hidden" name="_method">
+    <input type="hidden" name="_id" value="{{-data.id-}}">
+
+  <div class="form-group">
+    <label for="board">계시판</label>:</label>
+    <input type="text" name='board' class="form-control" value='{{-data.board-}}' id="board">
+  </div>
+
+  <button type="butten" class="btn btn-primary" id="board_modify">수정</button>
+</form>

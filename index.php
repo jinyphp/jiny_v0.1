@@ -21,6 +21,8 @@ if (php_sapi_name() == "cli-server") {
 const DS = DIRECTORY_SEPARATOR;
 const PS = PATH_SEPARATOR;
 
+const _JINY_DIR_ = "";
+
 if (DS == "/") {
     define("SYSTEM", "Linux");
 } else {
